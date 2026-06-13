@@ -1,0 +1,2437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>కదిరి లక్ష్మీ నరసింహ స్వామి ఆలయం | Kadiri Lakshmi Narasimha Swamy Temple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@300;400;500;600&family=Noto+Serif+Telugu:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ═══════════════════════════════════════
+       DEVOTIONAL PALETTE — Cosmic Vishnu Blue
+       "The Lord who holds the universe within"
+       ═══════════════════════════════════════ */
+    :root {
+      --saffron:      #FF8C00;     /* sacred fire / dawn light */
+      --saffron-deep: #E05C00;
+      --gold:         #D4AF37;     /* divine ornament gold */
+      --gold-light:   #F2D060;
+      --gold-pale:    #FAE89A;
+      --lotus:        #C96490;     /* Goddess Lakshmi / lotus */
+      --lotus-light:  #E8A0C0;
+      --tulsi:        #1E6B42;     /* holy basil green */
+      --cream:        #FFF8E7;     /* sacred parchment */
+      --cream-dim:    rgba(255,248,231,0.75);
+      --cream-faint:  rgba(255,248,231,0.45);
+      /* Background layers — deep cosmic indigo (Vishnu's complexion) */
+      --bg-darkest:   #020509;
+      --bg-deep:      #05091A;
+      --bg-mid:       #07102A;
+      --bg-upper:     #0C1A3A;
+      --bg-card:      rgba(255,255,255,0.04);
+      /* Borders */
+      --border-gold:  rgba(212,175,55,0.25);
+      --border-saf:   rgba(255,140,0,0.2);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg-darkest);
+      color: var(--cream);
+      font-family: 'Noto Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* subtle star-field texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 10% 20%, rgba(255,248,231,0.25) 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 60%, rgba(212,175,55,0.2) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 15%, rgba(255,248,231,0.15) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 45%, rgba(212,175,55,0.18) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 80%, rgba(255,248,231,0.12) 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 85%, rgba(201,100,144,0.15) 0%, transparent 100%),
+        radial-gradient(1px 1px at 65% 70%, rgba(255,140,0,0.12) 0%, transparent 100%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── MANTRA TICKER ─── */
+    .mantra-ticker {
+      background: linear-gradient(90deg, #03091F, #0A1535, #03091F);
+      border-bottom: 1px solid var(--border-gold);
+      padding: 8px 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 100;
+    }
+    .ticker-inner {
+      display: flex;
+      white-space: nowrap;
+      animation: ticker 38s linear infinite;
+      color: var(--gold-light);
+      font-size: 0.88rem;
+      font-family: 'Noto Serif', serif;
+      letter-spacing: 0.06em;
+    }
+    .ticker-inner span { padding: 0 60px; }
+    @keyframes ticker {
+      0%   { transform: translateX(100vw); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* ─── NAVBAR ─── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(2,5,9,0.95);
+      border-bottom: 1px solid var(--border-gold);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: 'Noto Serif Telugu', serif;
+      font-size: 1rem;
+      color: var(--gold);
+      text-decoration: none;
+      line-height: 1.25;
+    }
+    .nav-logo span {
+      display: block;
+      font-family: 'Noto Serif', serif;
+      font-size: 0.67rem;
+      color: var(--gold-light);
+      letter-spacing: 0.1em;
+      opacity: 0.8;
+    }
+    .nav-links { display: flex; gap: 22px; list-style: none; }
+    .nav-links a {
+      color: var(--cream-dim);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0; right: 0;
+      height: 1px;
+      background: var(--saffron);
+      transform: scaleX(0);
+      transition: transform 0.25s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-right { display: flex; gap: 10px; align-items: center; }
+    .lang-toggle {
+      background: transparent;
+      border: 1px solid var(--border-gold);
+      color: var(--gold);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-toggle:hover { background: var(--gold); color: var(--bg-darkest); }
+    .bell-btn {
+      background: none; border: none;
+      font-size: 1.35rem; cursor: pointer;
+      animation: sway 3s ease-in-out infinite;
+      transform-origin: top center;
+    }
+    @keyframes sway {
+      0%,100% { transform: rotate(-8deg); }
+      50%      { transform: rotate(8deg); }
+    }
+    .hamburger { display: none; background: none; border: none; color: var(--gold); font-size: 1.5rem; cursor: pointer; }
+    .mobile-menu { display: none; }
+
+    /* ═══════════════════════════════════
+       HERO
+    ═══════════════════════════════════ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    /* Real gopuram photo as hero background */
+    .hero-photo-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Main_Gate_Tower_of_the_temple.JPG/800px-Main_Gate_Tower_of_the_temple.JPG');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      transform-origin: center;
+      transition: transform 0.1s linear;
+    }
+    /* layered gradient over photo */
+    .hero-photo-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg,
+          rgba(2,5,9,0.55)  0%,
+          rgba(2,5,9,0.35) 30%,
+          rgba(5,9,26,0.60) 65%,
+          rgba(2,5,9,0.97) 100%
+        ),
+        radial-gradient(ellipse at 50% 45%, rgba(212,175,55,0.08) 0%, transparent 65%);
+    }
+    /* Om bg glow */
+    .om-bg {
+      position: absolute;
+      font-size: 35vw;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--gold);
+      opacity: 0.035;
+      animation: omPulse 8s ease-in-out infinite;
+      font-family: 'Noto Serif', serif;
+      user-select: none; pointer-events: none;
+      line-height: 1;
+    }
+    @keyframes omPulse {
+      0%,100% { opacity: 0.025; transform: translate(-50%,-50%) scale(1); }
+      50%      { opacity: 0.055; transform: translate(-50%,-50%) scale(1.04); }
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 800px;
+    }
+    /* Deity SVG frame */
+    .deity-frame {
+      width: min(280px, 70vw);
+      height: min(280px, 70vw);
+      margin: 0 auto 28px;
+      position: relative;
+    }
+    .deity-glow {
+      position: absolute;
+      inset: -24px;
+      border-radius: 50%;
+      background: radial-gradient(circle,
+        rgba(212,175,55,0.3) 0%,
+        rgba(255,140,0,0.1) 45%,
+        transparent 70%);
+      animation: deityGlow 3s ease-in-out infinite;
+    }
+    @keyframes deityGlow {
+      0%,100% { opacity: 0.7; transform: scale(1); }
+      50%      { opacity: 1;   transform: scale(1.1); }
+    }
+    .deity-svg {
+      width: 100%; height: 100%;
+      filter: drop-shadow(0 0 28px rgba(212,175,55,0.55))
+              drop-shadow(0 0 60px rgba(255,140,0,0.2));
+    }
+
+    /* ─── DEITY SVG ILLUSTRATION WRAPPER ─── */
+    .deity-svg-wrap {
+      width: min(360px, 88vw);
+      margin: 0 auto 22px;
+      filter:
+        drop-shadow(0 0 28px rgba(212,175,55,0.52))
+        drop-shadow(0 0 60px rgba(255,120,0,0.22));
+      animation: deityGlow 4s ease-in-out infinite;
+    }
+    .deity-svg-wrap svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+    }
+    .deity-photo-badge {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--gold);
+      box-shadow: 0 0 24px rgba(212,175,55,0.5);
+      margin: 0 auto 20px;
+      position: relative;
+    }
+    .deity-photo-badge img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .deity-photo-badge::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      box-shadow: inset 0 0 20px rgba(212,175,55,0.3);
+    }
+
+    .hero-title-tel {
+      font-family: 'Noto Serif Telugu', serif;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      color: var(--gold);
+      font-weight: 700;
+      text-shadow: 0 0 50px rgba(212,175,55,0.6), 0 2px 20px rgba(0,0,0,0.8);
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .hero-title-en {
+      font-family: 'Noto Serif', serif;
+      font-size: clamp(0.95rem, 2.4vw, 1.5rem);
+      color: var(--cream);
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+    }
+    .hero-tagline {
+      font-size: clamp(0.82rem, 1.7vw, 1rem);
+      color: var(--gold-light);
+      font-style: italic;
+      letter-spacing: 0.05em;
+      margin-bottom: 36px;
+      opacity: 0.9;
+    }
+    .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold) 0%, #B8942A 100%);
+      color: var(--bg-darkest);
+      border: none;
+      padding: 13px 30px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.87rem;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.25s;
+      box-shadow: 0 4px 20px rgba(212,175,55,0.35);
+    }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(212,175,55,0.55); }
+    .btn-outline {
+      background: transparent;
+      color: var(--gold);
+      border: 1.5px solid var(--gold);
+      padding: 11px 28px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.87rem;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.25s;
+    }
+    .btn-outline:hover { background: rgba(212,175,55,0.1); transform: translateY(-2px); }
+    .scroll-indicator {
+      position: absolute;
+      bottom: 28px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 5px;
+      opacity: 0.4; animation: scrollBounce 2s infinite;
+    }
+    .scroll-indicator span { width: 1px; height: 36px; background: var(--gold); display: block; }
+    @keyframes scrollBounce { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(8px); } }
+
+    /* ─── SECTIONS COMMON ─── */
+    section { position: relative; z-index: 1; }
+    .section-pad { padding: 80px 5%; }
+    .section-dark  { background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-deep) 100%); }
+    .section-mid   { background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-mid)  100%); }
+    .section-alt   { background: linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-deep)  100%); }
+    .section-upper { background: linear-gradient(180deg, var(--bg-upper) 0%, var(--bg-mid)  100%); }
+
+    .section-header { text-align: center; margin-bottom: 52px; }
+    .section-header .om-deco { display: block; font-size: 1.4rem; color: var(--saffron); margin-bottom: 8px; opacity: 0.8; }
+    .section-header h2 {
+      font-family: 'Noto Serif', serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.3rem);
+      color: var(--gold);
+      margin-bottom: 10px;
+      text-shadow: 0 0 24px rgba(212,175,55,0.25);
+    }
+    .section-header .tel-title {
+      font-family: 'Noto Serif Telugu', serif;
+      font-size: clamp(0.95rem, 2vw, 1.2rem);
+      color: var(--gold-light);
+      margin-bottom: 14px;
+      display: block;
+    }
+    .divider {
+      display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 14px;
+    }
+    .divider span { height: 1px; width: 70px; background: linear-gradient(90deg, transparent, var(--gold), transparent); display: block; }
+    .divider .lotus { font-size: 1.1rem; color: var(--lotus); }
+
+    /* ─── ORNAMENT ─── */
+    .ornament-border {
+      height: 5px;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--saffron) 0, var(--saffron) 6px,
+        transparent 6px, transparent 10px,
+        var(--gold) 10px, var(--gold) 16px,
+        transparent 16px, transparent 20px,
+        var(--lotus) 20px, var(--lotus) 26px,
+        transparent 26px, transparent 30px
+      );
+      opacity: 0.6;
+    }
+
+    /* ─── REAL PHOTO COMPONENT ─── */
+    .real-photo {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .gallery-item:hover .real-photo { transform: scale(1.04); }
+
+    /* ─── ABOUT ─── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .about-photo-stack { position: relative; }
+    .about-main-photo {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid var(--border-gold);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5), 0 0 30px rgba(212,175,55,0.1);
+      display: block;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+    .about-secondary-photo {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 48%;
+      border-radius: 8px;
+      border: 2px solid var(--gold);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    .about-text { padding-top: 10px; }
+    .about-text p { color: var(--cream-dim); line-height: 1.85; margin-bottom: 18px; font-size: 0.96rem; }
+    .about-text h3 { font-family: 'Noto Serif', serif; color: var(--saffron); font-size: 1.05rem; margin-bottom: 10px; margin-top: 22px; display: flex; align-items: center; gap: 8px; }
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(212,175,55,0.07), rgba(255,140,0,0.05));
+      border: 1px solid rgba(212,175,55,0.25);
+      border-left: 3px solid var(--saffron);
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin-top: 22px;
+      font-family: 'Noto Serif', serif;
+      font-style: italic;
+      color: var(--gold-light);
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+    .fact-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 32px;
+    }
+    .fact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 8px;
+      padding: 18px 14px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .fact-card:hover { background: rgba(212,175,55,0.09); border-color: rgba(212,175,55,0.5); transform: translateY(-3px); }
+    .fact-card .icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .fact-card h4 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 0.9rem; margin-bottom: 5px; }
+    .fact-card p { font-size: 0.8rem; color: var(--cream-faint); line-height: 1.5; }
+
+    /* ─── DIYA ─── */
+    .diya-row { text-align: center; padding: 24px 0; }
+    .diya { display: inline-block; position: relative; margin: 0 28px; }
+    .diya-body { width: 46px; height: 26px; background: linear-gradient(135deg, #C49A1A, #8B6914); border-radius: 0 0 50% 50%; margin: 0 auto; }
+    .diya-body::before { content: ''; position: absolute; top: -7px; left: 50%; transform: translateX(-50%); width: 10px; height: 7px; background: #8B6914; border-radius: 50% 50% 0 0; }
+    .flame { position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); width: 12px; height: 26px; }
+    .flame::before { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 9px; height: 18px; background: radial-gradient(ellipse at 50% 100%, var(--saffron) 0%, #FF0 40%, transparent 70%); border-radius: 50% 50% 20% 20%; animation: flicker 1.2s ease-in-out infinite alternate; }
+    .flame::after  { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 5px; height: 11px; background: radial-gradient(ellipse at 50% 100%, #FFF 0%, var(--saffron) 60%, transparent 100%); border-radius: 50% 50% 20% 20%; animation: flicker 0.8s ease-in-out infinite alternate-reverse; }
+    @keyframes flicker {
+      0%   { transform: translateX(-50%) scaleX(1)   scaleY(1)    rotate(-2deg); opacity: 1; }
+      33%  { transform: translateX(-48%) scaleX(0.9) scaleY(1.1)  rotate(2deg);  opacity: 0.9; }
+      66%  { transform: translateX(-52%) scaleX(1.1) scaleY(0.95) rotate(-1deg); opacity: 1; }
+      100% { transform: translateX(-50%) scaleX(0.95)scaleY(1.05) rotate(1deg);  opacity: 0.95; }
+    }
+    .glow-ring { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 54px; height: 54px; border-radius: 50%; background: radial-gradient(circle, rgba(255,165,0,0.28) 0%, transparent 70%); animation: glowRing 1.5s ease-in-out infinite alternate; }
+    @keyframes glowRing { 0% { opacity: 0.5; } 100% { opacity: 1; } }
+
+    /* ─── TIMINGS ─── */
+    .timings-container { max-width: 1000px; margin: 0 auto; }
+    .timings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 48px; }
+    .timing-card { background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 10px; overflow: hidden; }
+    .timing-card-header { background: linear-gradient(135deg, rgba(255,140,0,0.18), rgba(212,175,55,0.12)); padding: 16px 22px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--border-gold); }
+    .timing-card-header .icon { font-size: 1.4rem; }
+    .timing-card-header h3 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 0.97rem; }
+    .timing-items { padding: 18px 22px; }
+    .timing-item { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid rgba(212,175,55,0.08); font-size: 0.87rem; }
+    .timing-item:last-child { border-bottom: none; }
+    .timing-item .puja-name { color: var(--cream-dim); }
+    .timing-item .puja-time { color: var(--saffron); font-weight: 600; font-family: 'Noto Serif', serif; }
+    .seva-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px,1fr)); gap: 14px; margin-bottom: 30px; }
+    .seva-card { background: rgba(255,140,0,0.05); border: 1px solid var(--border-saf); border-radius: 8px; padding: 18px; text-align: center; transition: all 0.3s; cursor: pointer; }
+    .seva-card:hover { background: rgba(255,140,0,0.1); border-color: var(--saffron); transform: translateY(-3px); }
+    .seva-card .seva-icon { font-size: 1.7rem; margin-bottom: 8px; }
+    .seva-card h4 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 0.88rem; margin-bottom: 4px; }
+    .seva-card p { font-size: 0.77rem; color: var(--cream-faint); }
+    .center-btn { text-align: center; margin-top: 10px; }
+
+    /* ─── FESTIVALS ─── */
+    .festivals-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(265px,1fr)); gap: 22px; max-width: 1100px; margin: 0 auto; }
+    .festival-card { background: linear-gradient(160deg, rgba(12,26,58,0.7), rgba(5,9,26,0.9)); border: 1px solid var(--border-gold); border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+    .festival-card:hover { transform: translateY(-5px); border-color: var(--gold); box-shadow: 0 14px 40px rgba(212,175,55,0.12); }
+    .festival-card-top { height: 4px; background: linear-gradient(90deg, var(--lotus), var(--gold), var(--saffron)); }
+    .festival-card-body { padding: 26px 22px; }
+    .festival-icon { font-size: 2.3rem; margin-bottom: 12px; }
+    .festival-card h3 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 1.05rem; margin-bottom: 7px; }
+    .festival-card .date { display: inline-block; background: rgba(255,140,0,0.1); border: 1px solid rgba(255,140,0,0.3); color: var(--saffron); font-size: 0.75rem; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+    .festival-card p { font-size: 0.84rem; color: var(--cream-faint); line-height: 1.65; }
+
+    /* ─── GALLERY ─── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      max-width: 1100px;
+      margin: 0 auto 48px;
+    }
+    .gallery-item {
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      background: rgba(212,175,55,0.06);
+      border: 1px solid var(--border-gold);
+      aspect-ratio: 4/3;
+    }
+    .gallery-item.tall { aspect-ratio: 3/4; grid-row: span 2; }
+    .gallery-item.wide { grid-column: span 2; aspect-ratio: 16/7; }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(2,5,9,0.85) 100%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 16px; opacity: 0; transition: opacity 0.35s;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay span { font-size: 0.82rem; color: var(--gold-light); font-family: 'Noto Serif', serif; }
+    .gallery-overlay .zoom { font-size: 1.1rem; color: var(--gold); margin-bottom: 4px; }
+
+    /* video / live darshan */
+    .video-section { max-width: 720px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 12px; overflow: hidden; }
+    .video-placeholder { height: 360px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; position: relative; }
+    .video-bg-photo {
+      position: absolute; inset: 0;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kadiri_Temple_North_Gopuram.JPG/600px-Kadiri_Temple_North_Gopuram.JPG');
+      background-size: cover; background-position: center;
+      opacity: 0.25;
+    }
+    .video-placeholder > * { position: relative; z-index: 1; }
+    .play-btn { width: 68px; height: 68px; background: linear-gradient(135deg, var(--saffron), var(--gold)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; cursor: pointer; transition: all 0.3s; color: var(--bg-darkest); box-shadow: 0 0 30px rgba(255,140,0,0.45); }
+    .play-btn:hover { transform: scale(1.12); box-shadow: 0 0 50px rgba(255,140,0,0.7); }
+    .video-placeholder h3 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 1.05rem; }
+    .video-placeholder p { font-size: 0.83rem; color: var(--cream-faint); }
+
+    .live-darshan { max-width: 780px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 14px; overflow: hidden; }
+    .live-header { background: linear-gradient(90deg, rgba(255,140,0,0.2), rgba(212,175,55,0.1)); padding: 14px 22px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--border-gold); }
+    .live-dot { width: 10px; height: 10px; background: #FF4444; border-radius: 50%; animation: livePulse 1s ease-in-out infinite; box-shadow: 0 0 7px #FF4444; }
+    @keyframes livePulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+    .live-header span { font-family: 'Noto Serif', serif; color: var(--cream); font-size: 1rem; }
+    .live-content { height: 310px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; position: relative; }
+    .live-bg-photo { position: absolute; inset: 0; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Mandapam_at_Kadiri_Temple.JPG/600px-Mandapam_at_Kadiri_Temple.JPG'); background-size: cover; background-position: center; opacity: 0.15; }
+    .live-content > * { position: relative; z-index: 1; }
+    .live-content .big-om { font-size: 4.5rem; color: var(--gold); opacity: 0.5; animation: omPulse 3s infinite; }
+    .live-content h3 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 1.15rem; }
+    .live-content p { font-size: 0.83rem; color: var(--cream-faint); }
+
+    /* ─── SEVA ─── */
+    .seva-donation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; max-width: 1100px; margin: 0 auto; }
+    .form-card { background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 12px; padding: 30px; }
+    .form-card h3 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 1.15rem; margin-bottom: 22px; padding-bottom: 12px; border-bottom: 1px solid var(--border-gold); }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.79rem; color: var(--cream-faint); margin-bottom: 5px; letter-spacing: 0.05em; text-transform: uppercase; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+      border-radius: 6px; padding: 11px 14px;
+      color: var(--cream); font-size: 0.88rem;
+      font-family: 'Noto Sans', sans-serif;
+      transition: border-color 0.2s; outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--saffron); background: rgba(255,140,0,0.04); }
+    .form-group select option { background: var(--bg-mid); color: var(--cream); }
+    .form-group textarea { resize: vertical; min-height: 75px; }
+    .donation-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+    .donation-opt { background: rgba(255,140,0,0.04); border: 1.5px solid var(--border-saf); border-radius: 8px; padding: 14px; cursor: pointer; transition: all 0.25s; text-align: center; }
+    .donation-opt:hover, .donation-opt.active { background: rgba(255,140,0,0.1); border-color: var(--saffron); }
+    .donation-opt .d-icon { font-size: 1.5rem; margin-bottom: 5px; }
+    .donation-opt h4 { font-size: 0.82rem; color: var(--gold); margin-bottom: 3px; }
+    .donation-opt p { font-size: 0.73rem; color: var(--cream-faint); }
+    .trust-box { background: rgba(255,140,0,0.04); border: 1px solid var(--border-gold); border-radius: 8px; padding: 14px 16px; font-size: 0.81rem; color: var(--cream-faint); line-height: 1.8; margin-top: 18px; }
+    .trust-box strong { color: var(--gold); }
+
+    /* ─── REACH ─── */
+    .reach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; max-width: 1100px; margin: 0 auto; }
+    .map-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 420px;
+      position: relative;
+    }
+    .map-real-photo {
+      width: 100%; height: 100%; min-height: 420px;
+      object-fit: cover; display: block; opacity: 0.7;
+    }
+    .map-pin-overlay {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 14px;
+      background: linear-gradient(180deg, transparent 30%, rgba(2,5,9,0.85) 100%);
+      padding: 20px;
+    }
+    .map-pin-overlay h4 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 1.05rem; text-align: center; }
+    .map-pin-overlay p { font-size: 0.83rem; color: var(--cream-dim); text-align: center; line-height: 1.6; }
+    .map-pin-overlay a { color: var(--saffron); text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid rgba(255,140,0,0.4); transition: color 0.2s; }
+    .map-pin-overlay a:hover { color: var(--gold); }
+    .reach-info { display: flex; flex-direction: column; gap: 16px; }
+    .reach-card { background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 10px; padding: 18px 20px; display: flex; gap: 14px; align-items: flex-start; }
+    .reach-card .r-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .reach-card h4 { font-family: 'Noto Serif', serif; color: var(--saffron); font-size: 0.93rem; margin-bottom: 5px; }
+    .reach-card p { font-size: 0.83rem; color: var(--cream-dim); line-height: 1.65; }
+    .distance-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 7px; }
+    .dtag { background: rgba(255,140,0,0.08); border: 1px solid rgba(255,140,0,0.2); color: var(--saffron); font-size: 0.74rem; padding: 2px 9px; border-radius: 20px; }
+
+    /* ─── CONTACT ─── */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; max-width: 1100px; margin: 0 auto; }
+    .contact-info-block { display: flex; flex-direction: column; gap: 16px; }
+    .contact-card { background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 10px; padding: 18px 22px; display: flex; gap: 14px; align-items: flex-start; }
+    .contact-card .c-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .contact-card h4 { font-family: 'Noto Serif', serif; color: var(--gold); font-size: 0.88rem; margin-bottom: 4px; }
+    .contact-card p { font-size: 0.83rem; color: var(--cream-dim); line-height: 1.6; }
+    .contact-card a { color: var(--saffron); text-decoration: none; }
+    .contact-card a:hover { color: var(--gold); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: linear-gradient(180deg, var(--bg-mid), var(--bg-darkest));
+      border-top: 1px solid var(--border-gold);
+      padding: 56px 5% 28px;
+    }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; margin-bottom: 36px; }
+    .footer-brand .f-name-tel { font-family: 'Noto Serif Telugu', serif; font-size: 1.2rem; color: var(--gold); display: block; margin-bottom: 5px; }
+    .footer-brand .f-name-en { font-family: 'Noto Serif', serif; font-size: 0.82rem; color: var(--gold-light); display: block; margin-bottom: 14px; }
+    .footer-brand p { font-size: 0.81rem; color: var(--cream-faint); line-height: 1.7; }
+    .footer-col h4 { font-family: 'Noto Serif', serif; color: var(--saffron); font-size: 0.87rem; margin-bottom: 14px; letter-spacing: 0.07em; text-transform: uppercase; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 9px; }
+    .footer-col ul li a { color: var(--cream-faint); text-decoration: none; font-size: 0.81rem; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .social-links { display: flex; gap: 10px; margin-top: 16px; }
+    .social-link { width: 36px; height: 36px; border: 1px solid var(--border-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; text-decoration: none; color: var(--gold-light); transition: all 0.25s; }
+    .social-link:hover { background: rgba(212,175,55,0.12); border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .footer-bottom { border-top: 1px solid rgba(212,175,55,0.1); padding-top: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .footer-bottom p { font-size: 0.76rem; color: rgba(255,248,231,0.35); }
+    .footer-deco { font-size: 1.1rem; opacity: 0.45; }
+
+    /* ─── LIGHTBOX ─── */
+    .lightbox { display: none; position: fixed; inset: 0; background: rgba(2,5,9,0.96); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; gap: 14px; }
+    .lightbox.open { display: flex; }
+    .lightbox-img-wrap { max-width: 90vw; max-height: 75vh; border: 2px solid var(--border-gold); border-radius: 8px; overflow: hidden; }
+    .lightbox-img-wrap img { display: block; max-width: 90vw; max-height: 75vh; object-fit: contain; }
+    .lightbox-caption { color: var(--gold-light); font-family: 'Noto Serif', serif; font-size: 0.9rem; }
+    .lightbox-close { background: none; border: 1px solid var(--border-gold); color: var(--gold); padding: 7px 18px; border-radius: 4px; cursor: pointer; font-size: 0.88rem; }
+    .lightbox-close:hover { background: rgba(212,175,55,0.1); }
+
+    /* ─── BELL TOAST ─── */
+    .bell-toast { position: fixed; bottom: 28px; right: 28px; background: linear-gradient(135deg, var(--bg-upper), var(--bg-mid)); border: 1px solid var(--gold); border-radius: 8px; padding: 11px 18px; font-family: 'Noto Serif', serif; color: var(--gold); font-size: 0.88rem; z-index: 8888; display: none; animation: slideIn 0.3s ease; }
+    @keyframes slideIn { from { transform: translateX(100px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+    /* ─── LOADER ─── */
+    .loader { position: fixed; inset: 0; background: var(--bg-darkest); z-index: 99999; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 18px; transition: opacity 0.5s, visibility 0.5s; }
+    .loader.hidden { opacity: 0; visibility: hidden; }
+    .lotus-loader { font-size: 3.5rem; animation: lotusBloom 1.5s ease-in-out infinite; }
+    @keyframes lotusBloom { 0% { transform: scale(0.8) rotate(-10deg); opacity: 0.5; } 50% { transform: scale(1.1) rotate(0deg); opacity: 1; } 100% { transform: scale(0.8) rotate(10deg); opacity: 0.5; } }
+    .loader p { color: var(--gold); font-family: 'Noto Serif', serif; font-size: 1rem; letter-spacing: 0.15em; }
+    .loader-bar { width: 200px; height: 2px; background: rgba(212,175,55,0.15); border-radius: 2px; overflow: hidden; }
+    .loader-bar::after { content: ''; display: block; height: 100%; background: linear-gradient(90deg, var(--saffron), var(--gold)); animation: loadBar 2s ease-in-out forwards; }
+    @keyframes loadBar { from { width: 0; } to { width: 100%; } }
+
+    /* ─── ANIMATIONS ─── */
+    .fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.7s, transform 0.7s; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      .mobile-menu.open { display: flex; flex-direction: column; position: fixed; top: 64px; left: 0; right: 0; background: rgba(2,5,9,0.98); border-bottom: 1px solid var(--border-gold); z-index: 998; padding: 20px 5%; gap: 14px; }
+      .mobile-menu a { color: var(--cream); text-decoration: none; font-size: 1rem; padding: 7px 0; border-bottom: 1px solid rgba(212,175,55,0.1); }
+      .about-grid, .timings-grid, .seva-donation-grid, .reach-grid, .contact-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item.tall { grid-row: span 1; aspect-ratio: 4/3; }
+      .gallery-item.wide { grid-column: span 2; aspect-ratio: 16/7; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .fact-cards { grid-template-columns: 1fr 1fr; }
+      .about-secondary-photo { display: none; }
+    }
+    @media (max-width: 580px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item.wide, .gallery-item.tall { grid-column: span 1; aspect-ratio: 4/3; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .fact-cards { grid-template-columns: 1fr; }
+      .donation-options { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── LOADER ─── -->
+<div class="loader" id="loader">
+  <div class="lotus-loader">🪷</div>
+  <p>ॐ నమో నారాయణాయ</p>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- ─── BELL TOAST ─── -->
+<div class="bell-toast" id="bellToast">🔔 జయ శ్రీ లక్ష్మీ నరసింహ స్వామికి జయము!</div>
+
+<!-- ─── LIGHTBOX ─── -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-img-wrap">
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+  <p class="lightbox-caption" id="lightboxCaption"></p>
+  <button class="lightbox-close" onclick="closeLightbox()">✕ Close</button>
+</div>
+
+<!-- ─── MANTRA TICKER ─── -->
+<div class="mantra-ticker">
+  <div class="ticker-inner">
+    <span>ॐ నమో నారాయణాయ 🪷 ఉగ్రం వీరం మహావిష్ణుం జ్వలంతం సర్వతోముఖం 🔱 నృసింహం భీషణం భద్రం మృత్యుమృత్యుం నమామ్యహం 🌸 ॐ నమో భగవతే నరసింహాయ 🪷 శ్రీ లక్ష్మీ నరసింహ స్వామికి జయము 🔔 జయ జయ నరసింహ 🌺 ఓం నరసింహాయ నమః 🪷</span>
+    <span>ॐ నమో నారాయణాయ 🪷 ఉగ్రం వీరం మహావిష్ణుం జ్వలంతం సర్వతోముఖం 🔱 నృసింహం భీషణం భద్రం మృత్యుమృత్యుం నమామ్యహం 🌸 ॐ నమో భగవతే నరసింహాయ 🪷 శ్రీ లక్ష్మీ నరసింహ స్వామికి జయము 🔔</span>
+  </div>
+</div>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <a href="#home" class="nav-logo">
+    కదిరి శ్రీ లక్ష్మీ నరసింహ స్వామి ఆలయం
+    <span>Kadiri Lakshmi Narasimha Swamy Temple</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#timings">Timings</a></li>
+    <li><a href="#festivals">Festivals</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#seva">Seva</a></li>
+    <li><a href="#reach">Visit</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">తెలుగు</button>
+    <button class="bell-btn" onclick="ringBell()" title="Ring the Temple Bell">🔔</button>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"    onclick="toggleMenu()">About</a>
+  <a href="#timings"  onclick="toggleMenu()">Darshan Timings</a>
+  <a href="#festivals"onclick="toggleMenu()">Festivals</a>
+  <a href="#gallery"  onclick="toggleMenu()">Gallery</a>
+  <a href="#seva"     onclick="toggleMenu()">Seva & Donations</a>
+  <a href="#reach"    onclick="toggleMenu()">How to Reach</a>
+  <a href="#contact"  onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+<section id="home" class="hero">
+  <!-- Real temple gate photo as background -->
+  <div class="hero-photo-bg" id="heroBg"></div>
+  <div class="hero-photo-overlay"></div>
+  <div class="om-bg" aria-hidden="true">ॐ</div>
+
+  <div class="hero-content">
+    <!-- Deity SVG Illustration — Yogananda Lakshmi Narasimha Swamy -->
+    <div class="deity-svg-wrap">
+      <svg viewBox="0 0 500 620" xmlns="http://www.w3.org/2000/svg" aria-label="Yogananda Lakshmi Narasimha Swamy with Goddess Lakshmi">
+        <defs>
+          <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
+            <stop offset="0%" stop-color="#6A1E9E"/>
+            <stop offset="40%" stop-color="#3A0860"/>
+            <stop offset="100%" stop-color="#120030"/>
+          </radialGradient>
+          <radialGradient id="divineGlow" cx="50%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="rgba(255,200,0,0.55)"/>
+            <stop offset="55%" stop-color="rgba(255,140,0,0.18)"/>
+            <stop offset="100%" stop-color="transparent"/>
+          </radialGradient>
+          <radialGradient id="maneGrad" cx="48%" cy="38%" r="58%">
+            <stop offset="0%" stop-color="#FFD54F"/>
+            <stop offset="35%" stop-color="#FF8F00"/>
+            <stop offset="75%" stop-color="#BF5600"/>
+            <stop offset="100%" stop-color="#7A3000"/>
+          </radialGradient>
+          <radialGradient id="faceGrad" cx="44%" cy="36%" r="62%">
+            <stop offset="0%" stop-color="#D4935C"/>
+            <stop offset="52%" stop-color="#A0622D"/>
+            <stop offset="100%" stop-color="#6B3A10"/>
+          </radialGradient>
+          <radialGradient id="bodyGrad" cx="50%" cy="30%" r="65%">
+            <stop offset="0%" stop-color="#4A6ED4"/>
+            <stop offset="58%" stop-color="#1E3FA0"/>
+            <stop offset="100%" stop-color="#0D1F60"/>
+          </radialGradient>
+          <radialGradient id="eyeIris" cx="35%" cy="28%" r="62%">
+            <stop offset="0%" stop-color="#FFE082"/>
+            <stop offset="48%" stop-color="#FFB300"/>
+            <stop offset="100%" stop-color="#E65100"/>
+          </radialGradient>
+          <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFE57F"/>
+            <stop offset="40%" stop-color="#D4AF37"/>
+            <stop offset="100%" stop-color="#8B6914"/>
+          </linearGradient>
+          <linearGradient id="dhotiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFD54F"/>
+            <stop offset="50%" stop-color="#FF8C00"/>
+            <stop offset="100%" stop-color="#E65100"/>
+          </linearGradient>
+          <radialGradient id="laxmiSkin" cx="44%" cy="33%" r="62%">
+            <stop offset="0%" stop-color="#FAD8A0"/>
+            <stop offset="68%" stop-color="#E8B870"/>
+            <stop offset="100%" stop-color="#C89040"/>
+          </radialGradient>
+          <linearGradient id="laxmiSaree" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FF80AB"/>
+            <stop offset="100%" stop-color="#C2185B"/>
+          </linearGradient>
+          <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="rgba(30,100,180,0.75)"/>
+            <stop offset="100%" stop-color="rgba(10,40,100,0.9)"/>
+          </linearGradient>
+          <filter id="glow4">
+            <feGaussianBlur stdDeviation="4" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="glow8">
+            <feGaussianBlur stdDeviation="8" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="softShadow">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(0,0,0,0.5)"/>
+          </filter>
+        </defs>
+
+        <!-- ── BACKGROUND ── -->
+        <rect width="500" height="620" fill="url(#bgGrad)"/>
+        <!-- Stars -->
+        <g fill="rgba(255,255,255,0.45)">
+          <circle cx="42" cy="48" r="1"/><circle cx="82" cy="28" r="1.5"/>
+          <circle cx="122" cy="82" r="1"/><circle cx="398" cy="38" r="1.5"/>
+          <circle cx="452" cy="78" r="1"/><circle cx="462" cy="28" r="1"/>
+          <circle cx="32" cy="198" r="1"/><circle cx="468" cy="176" r="1"/>
+          <circle cx="72" cy="310" r="1.2"/><circle cx="428" cy="290" r="1.2"/>
+        </g>
+        <!-- Divine rays -->
+        <g opacity="0.12" stroke="rgba(255,200,50,0.7)" stroke-width="1.5" stroke-linecap="round">
+          <line x1="250" y1="230" x2="250" y2="0"/>
+          <line x1="250" y1="230" x2="500" y2="110"/>
+          <line x1="250" y1="230" x2="500" y2="380"/>
+          <line x1="250" y1="230" x2="250" y2="480"/>
+          <line x1="250" y1="230" x2="0" y2="380"/>
+          <line x1="250" y1="230" x2="0" y2="110"/>
+          <line x1="250" y1="230" x2="430" y2="15"/>
+          <line x1="250" y1="230" x2="430" y2="470"/>
+          <line x1="250" y1="230" x2="70"  y2="470"/>
+          <line x1="250" y1="230" x2="70"  y2="15"/>
+          <line x1="250" y1="230" x2="340" y2="5"/>
+          <line x1="250" y1="230" x2="160" y2="5"/>
+        </g>
+
+        <!-- ── SERPENT HOOD (Shesha/Ananta) ── -->
+        <!-- Hood fan base -->
+        <ellipse cx="250" cy="195" rx="178" ry="215" fill="rgba(70,0,130,0.42)"/>
+        <!-- Seven hoods -->
+        <g>
+          <ellipse cx="250" cy="58" rx="32" ry="72" fill="rgba(120,40,185,0.72)"/>
+          <ellipse cx="250" cy="58" rx="32" ry="72" fill="rgba(120,40,185,0.72)" transform="rotate(-14 250 210)"/>
+          <ellipse cx="250" cy="58" rx="28" ry="65" fill="rgba(108,28,170,0.68)" transform="rotate(-28 250 210)"/>
+          <ellipse cx="250" cy="58" rx="24" ry="58" fill="rgba(96,18,155,0.62)" transform="rotate(-42 250 210)"/>
+          <ellipse cx="250" cy="58" rx="32" ry="72" fill="rgba(120,40,185,0.72)" transform="rotate(14 250 210)"/>
+          <ellipse cx="250" cy="58" rx="28" ry="65" fill="rgba(108,28,170,0.68)" transform="rotate(28 250 210)"/>
+          <ellipse cx="250" cy="58" rx="24" ry="58" fill="rgba(96,18,155,0.62)" transform="rotate(42 250 210)"/>
+        </g>
+        <!-- Hood markings -->
+        <g fill="none" stroke="rgba(200,140,255,0.45)" stroke-width="1.2">
+          <ellipse cx="250" cy="52" rx="19" ry="46"/>
+          <ellipse cx="250" cy="52" rx="17" ry="40" transform="rotate(-14 250 210)"/>
+          <ellipse cx="250" cy="52" rx="14" ry="34" transform="rotate(-28 250 210)"/>
+          <ellipse cx="250" cy="52" rx="17" ry="40" transform="rotate(14 250 210)"/>
+          <ellipse cx="250" cy="52" rx="14" ry="34" transform="rotate(28 250 210)"/>
+        </g>
+        <!-- Hood gems -->
+        <g fill="rgba(255,200,80,0.82)" filter="url(#glow4)">
+          <circle cx="250" cy="30" r="5.5"/>
+          <circle cx="250" cy="30" r="4" transform="rotate(-14 250 210)"/>
+          <circle cx="250" cy="30" r="3.5" transform="rotate(-28 250 210)"/>
+          <circle cx="250" cy="30" r="4" transform="rotate(14 250 210)"/>
+          <circle cx="250" cy="30" r="3.5" transform="rotate(28 250 210)"/>
+        </g>
+
+        <!-- ── DIVINE PRABHAVALI HALO ── -->
+        <circle cx="250" cy="228" r="168" fill="url(#divineGlow)" filter="url(#glow8)"/>
+        <circle cx="250" cy="228" r="154" fill="none" stroke="rgba(212,175,55,0.42)" stroke-width="3"/>
+        <circle cx="250" cy="228" r="146" fill="none" stroke="rgba(255,220,80,0.18)" stroke-width="1"/>
+        <!-- Lotus petals of halo -->
+        <g fill="rgba(255,200,100,0.1)" stroke="rgba(212,175,55,0.28)" stroke-width="0.9">
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(0   250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(30  250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(60  250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(90  250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(120 250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(150 250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(180 250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(210 250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(240 250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(270 250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(300 250 228)"/>
+          <ellipse cx="250" cy="80" rx="15" ry="30" transform="rotate(330 250 228)"/>
+        </g>
+
+        <!-- ── TEMPLE SILHOUETTE ── -->
+        <g opacity="0.22" fill="rgba(25,8,55,0.92)">
+          <rect x="0" y="520" width="500" height="100"/>
+          <!-- Centre gopuram -->
+          <rect x="202" y="452" width="96" height="72"/>
+          <rect x="212" y="422" width="76" height="35"/>
+          <rect x="222" y="396" width="56" height="30"/>
+          <rect x="230" y="374" width="40" height="26"/>
+          <polygon points="250,350 228,374 272,374"/>
+          <!-- Left mini -->
+          <rect x="82" y="490" width="68" height="34"/>
+          <rect x="90" y="470" width="52" height="24"/>
+          <polygon points="116,455 90,470 142,470"/>
+          <!-- Right mini -->
+          <rect x="350" y="490" width="68" height="34"/>
+          <rect x="358" y="470" width="52" height="24"/>
+          <polygon points="384,455 358,470 410,470"/>
+        </g>
+
+        <!-- ── WATER / OCEAN ── -->
+        <path d="M0 548 Q80 532 160 548 Q240 562 320 546 Q400 530 500 546 L500 620 L0 620 Z" fill="url(#waterGrad)" opacity="0.72"/>
+        <path d="M0 558 Q60 546 120 556 Q200 570 280 552 Q360 536 440 552 Q480 558 500 552 L500 620 L0 620 Z" fill="rgba(8,28,96,0.52)" opacity="0.6"/>
+        <g stroke="rgba(100,180,255,0.28)" stroke-width="0.9" fill="none">
+          <path d="M48 562 Q100 556 152 562"/>
+          <path d="M198 567 Q250 560 302 567"/>
+          <path d="M348 562 Q400 556 452 562"/>
+        </g>
+
+        <!-- ── LOTUS SEAT ── -->
+        <g transform="translate(250,530)">
+          <g fill="rgba(228,98,138,0.72)" stroke="rgba(194,24,91,0.55)" stroke-width="0.8">
+            <ellipse cx="-82" cy="0"  rx="30" ry="14" transform="rotate(-26 -82 0)"/>
+            <ellipse cx="-46" cy="-9" rx="32" ry="14" transform="rotate(-13 -46 -9)"/>
+            <ellipse cx="0"   cy="-13" rx="34" ry="14"/>
+            <ellipse cx="46"  cy="-9" rx="32" ry="14" transform="rotate(13 46 -9)"/>
+            <ellipse cx="82"  cy="0"  rx="30" ry="14" transform="rotate(26 82 0)"/>
+          </g>
+          <g fill="rgba(248,138,168,0.58)" stroke="rgba(194,24,91,0.42)" stroke-width="0.7">
+            <ellipse cx="-56" cy="-19" rx="26" ry="11" transform="rotate(-18 -56 -19)"/>
+            <ellipse cx="-22" cy="-26" rx="28" ry="11"/>
+            <ellipse cx="14"  cy="-28" rx="28" ry="11"/>
+            <ellipse cx="48"  cy="-22" rx="26" ry="11" transform="rotate(10 48 -22)"/>
+          </g>
+          <ellipse cx="0" cy="-9"  rx="102" ry="18" fill="rgba(212,175,55,0.32)" stroke="rgba(212,175,55,0.58)" stroke-width="1.4"/>
+          <ellipse cx="0" cy="-13" rx="86"  ry="13" fill="rgba(212,175,55,0.18)" stroke="rgba(212,175,55,0.38)" stroke-width="0.8"/>
+        </g>
+
+        <!-- ── LOWER BODY (seated) ── -->
+        <ellipse cx="195" cy="490" rx="68" ry="28" fill="url(#bodyGrad)" transform="rotate(-5 195 490)"/>
+        <ellipse cx="305" cy="490" rx="68" ry="28" fill="url(#bodyGrad)" transform="rotate(5 305 490)"/>
+        <!-- Dhoti -->
+        <path d="M140 462 Q195 490 250 488 Q305 490 360 462 L352 520 Q305 542 250 542 Q195 542 148 520 Z" fill="url(#dhotiBg)" opacity="0.9"/>
+        <path d="M143 464 Q250 496 357 464" fill="none" stroke="rgba(212,175,55,0.88)" stroke-width="2.8"/>
+        <path d="M146 470 Q250 500 354 470" fill="none" stroke="rgba(255,220,50,0.45)" stroke-width="1.4"/>
+        <path d="M220 472 Q228 502 224 516" fill="none" stroke="rgba(180,90,0,0.28)" stroke-width="0.9"/>
+        <path d="M280 472 Q272 502 276 516" fill="none" stroke="rgba(180,90,0,0.28)" stroke-width="0.9"/>
+        <!-- Waistband -->
+        <path d="M158 408 Q250 425 342 408" fill="none" stroke="rgba(212,175,55,0.88)" stroke-width="3.8"/>
+        <path d="M159 415 Q250 432 341 415" fill="none" stroke="rgba(255,220,50,0.38)" stroke-width="1.8"/>
+        <circle cx="250" cy="416" r="8" fill="url(#goldShine)" stroke="rgba(255,230,80,0.88)" stroke-width="1.2"/>
+        <circle cx="250" cy="416" r="3.8" fill="rgba(220,50,50,0.9)"/>
+
+        <!-- ── TORSO ── -->
+        <path d="M190 312 Q178 358 175 402 Q200 420 250 422 Q300 420 325 402 Q322 358 310 312 Q282 324 250 325 Q218 324 190 312 Z" fill="url(#bodyGrad)"/>
+        <path d="M210 322 Q200 372 202 407" fill="none" stroke="rgba(80,120,220,0.22)" stroke-width="8" stroke-linecap="round"/>
+        <path d="M290 322 Q300 372 298 407" fill="none" stroke="rgba(18,38,98,0.18)" stroke-width="8" stroke-linecap="round"/>
+        <!-- Sacred thread -->
+        <path d="M210 320 Q218 358 212 392" fill="none" stroke="rgba(255,248,231,0.55)" stroke-width="1.8" stroke-linecap="round"/>
+
+        <!-- ── KAUSTUBHA GEM ── -->
+        <ellipse cx="250" cy="340" rx="13" ry="18" fill="rgba(180,20,20,0.9)" stroke="url(#goldShine)" stroke-width="2.4"/>
+        <ellipse cx="250" cy="339" rx="9" ry="12" fill="rgba(240,60,60,0.52)"/>
+        <ellipse cx="247" cy="334" rx="4" ry="5.5" fill="rgba(255,160,160,0.38)"/>
+        <!-- Srivatsa -->
+        <path d="M238 362 Q250 352 262 362 Q265 372 250 379 Q235 372 238 362 Z" fill="none" stroke="rgba(212,175,55,0.6)" stroke-width="1.4"/>
+
+        <!-- ── NECKLACES ── -->
+        <path d="M210 320 Q250 338 290 320" fill="none" stroke="url(#goldShine)" stroke-width="2.4"/>
+        <path d="M212 325 Q250 342 288 325" fill="none" stroke="rgba(212,175,55,0.52)" stroke-width="1.4"/>
+        <path d="M208 328 Q230 348 250 352 Q270 348 292 328" fill="none" stroke="rgba(60,160,60,0.58)" stroke-width="3.8" stroke-linecap="round" stroke-dasharray="5,3"/>
+        <circle cx="235" cy="330" r="3"/><circle cx="250" cy="334" r="4" fill="url(#goldShine)"/><circle cx="265" cy="330" r="3" fill="url(#goldShine)"/>
+
+        <!-- ── NECK ── -->
+        <path d="M222 294 Q250 302 278 294 L275 314 Q250 320 225 314 Z" fill="url(#bodyGrad)"/>
+        <rect x="218" y="290" width="64" height="10" rx="5" fill="url(#goldShine)" stroke="rgba(255,230,80,0.68)" stroke-width="1"/>
+        <circle cx="236" cy="295" r="3.5" fill="rgba(220,50,50,0.9)"/>
+        <circle cx="250" cy="296" r="4"   fill="rgba(80,160,255,0.85)"/>
+        <circle cx="264" cy="295" r="3.5" fill="rgba(50,180,80,0.9)"/>
+
+        <!-- ══════════════════════
+             FOUR ARMS
+        ══════════════════════ -->
+        <!-- Upper-Left → Shankha -->
+        <path d="M193 322 Q160 296 136 266 Q123 248 116 232" stroke="url(#bodyGrad)" stroke-width="22" fill="none" stroke-linecap="round"/>
+        <path d="M193 322 Q160 296 136 266 Q123 248 116 232" stroke="rgba(30,60,180,0.2)" stroke-width="14" fill="none" stroke-linecap="round"/>
+        <g transform="translate(108,218) rotate(-22)">
+          <ellipse cx="0" cy="0" rx="20" ry="26" fill="rgba(255,252,240,0.93)" stroke="rgba(212,175,55,0.72)" stroke-width="2"/>
+          <ellipse cx="0" cy="0" rx="13" ry="18" fill="rgba(245,240,220,0.58)"/>
+          <path d="M-11 -15 Q-8 -26 0 -20" fill="none" stroke="rgba(180,160,110,0.65)" stroke-width="1.4"/>
+          <path d="M-9 -6 Q-7 -17 1 -12" fill="none" stroke="rgba(180,160,110,0.48)" stroke-width="1.1"/>
+          <path d="M-7 4 Q-5 -7 2 -2" fill="none" stroke="rgba(180,160,110,0.38)" stroke-width="1"/>
+          <path d="M-5 23 Q-4 31 0 35" fill="none" stroke="rgba(200,185,140,0.62)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-20 2 Q-23 0 -20 -4" fill="none" stroke="rgba(100,150,255,0.48)" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- Upper-Right → Sudarshana Chakra -->
+        <path d="M307 322 Q340 296 364 266 Q377 248 384 232" stroke="url(#bodyGrad)" stroke-width="22" fill="none" stroke-linecap="round"/>
+        <path d="M307 322 Q340 296 364 266 Q377 248 384 232" stroke="rgba(30,60,180,0.2)" stroke-width="14" fill="none" stroke-linecap="round"/>
+        <g transform="translate(392,218)">
+          <circle cx="0" cy="0" r="36" fill="rgba(255,140,0,0.16)"/>
+          <g fill="rgba(255,110,0,0.82)" stroke="rgba(255,160,0,0.48)" stroke-width="0.5">
+            <polygon points="0,-36  4,-27 -4,-27"/>
+            <polygon points="25,-26 21,-17 16,-22"/>
+            <polygon points="36,0   27,4  27,-4"/>
+            <polygon points="25,26  16,22 21,17"/>
+            <polygon points="0,36  -4,27  4,27"/>
+            <polygon points="-25,26 -21,17 -16,22"/>
+            <polygon points="-36,0 -27,-4 -27,4"/>
+            <polygon points="-25,-26 -16,-22 -21,-17"/>
+            <polygon points="13,-34 12,-24 8,-30"/>
+            <polygon points="34,-13 24,-12 30,-8"/>
+            <polygon points="34,13  30,8   24,12"/>
+            <polygon points="13,34  8,30  12,24"/>
+            <polygon points="-13,34 -12,24 -8,30"/>
+            <polygon points="-34,13 -24,12 -30,8"/>
+            <polygon points="-34,-13 -30,-8 -24,-12"/>
+            <polygon points="-13,-34 -8,-30 -12,-24"/>
+          </g>
+          <circle cx="0" cy="0" r="27" fill="rgba(212,175,55,0.18)" stroke="rgba(212,175,55,0.94)" stroke-width="3.4"/>
+          <circle cx="0" cy="0" r="19" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.58)" stroke-width="1.4"/>
+          <g stroke="rgba(212,175,55,0.88)" stroke-width="2" stroke-linecap="round">
+            <line x1="0" y1="-19" x2="0" y2="19"/>
+            <line x1="-19" y1="0" x2="19" y2="0"/>
+            <line x1="-13" y1="-13" x2="13" y2="13"/>
+            <line x1="13" y1="-13" x2="-13" y2="13"/>
+          </g>
+          <circle cx="0" cy="0" r="8" fill="url(#goldShine)" stroke="rgba(255,230,80,0.88)" stroke-width="1.4"/>
+          <circle cx="0" cy="0" r="4" fill="rgba(255,100,0,0.92)"/>
+          <circle cx="-2" cy="-2" r="1.5" fill="rgba(255,240,200,0.78)"/>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite" additive="sum"/>
+        </g>
+
+        <!-- Lower-Left → Varada Mudra (blessing) -->
+        <path d="M190 337 Q167 378 151 418 Q145 434 144 450" stroke="url(#bodyGrad)" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M190 337 Q167 378 151 418 Q145 434 144 450" stroke="rgba(30,60,180,0.2)" stroke-width="12" fill="none" stroke-linecap="round"/>
+        <ellipse cx="144" cy="458" rx="16" ry="13" fill="#2540A0"/>
+        <path d="M132 458 Q127 444 129 433" stroke="#2540A0" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+        <path d="M138 462 Q133 449 135 437" stroke="#2540A0" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+        <path d="M145 464 Q142 451 144 439" stroke="#2540A0" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+        <path d="M152 462 Q150 451 152 441" stroke="#2540A0" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M129 453 Q121 449 119 443" stroke="#2540A0" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="144" cy="451" rx="13" ry="6" fill="none" stroke="url(#goldShine)" stroke-width="2.8" transform="rotate(5 144 451)"/>
+
+        <!-- Lower-Right → Padma (Lotus) -->
+        <path d="M310 337 Q333 378 349 418 Q355 434 356 450" stroke="url(#bodyGrad)" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M310 337 Q333 378 349 418 Q355 434 356 450" stroke="rgba(30,60,180,0.2)" stroke-width="12" fill="none" stroke-linecap="round"/>
+        <ellipse cx="356" cy="458" rx="16" ry="13" fill="#2540A0"/>
+        <line x1="356" y1="442" x2="356" y2="396" stroke="#2E7D32" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="344" cy="410" rx="12" ry="8" fill="rgba(40,130,50,0.62)" transform="rotate(-30 344 410)"/>
+        <ellipse cx="368" cy="410" rx="12" ry="8" fill="rgba(40,130,50,0.62)" transform="rotate(30 368 410)"/>
+        <g filter="url(#glow4)">
+          <ellipse cx="356" cy="386" rx="10" ry="17" fill="rgba(230,80,120,0.9)" stroke="rgba(194,24,91,0.68)" stroke-width="1"/>
+          <ellipse cx="343" cy="392" rx="9" ry="15" fill="rgba(240,120,150,0.84)" transform="rotate(-22 343 392)"/>
+          <ellipse cx="369" cy="392" rx="9" ry="15" fill="rgba(240,120,150,0.84)" transform="rotate(22 369 392)"/>
+          <ellipse cx="338" cy="402" rx="8" ry="12" fill="rgba(248,160,180,0.74)" transform="rotate(-38 338 402)"/>
+          <ellipse cx="374" cy="402" rx="8" ry="12" fill="rgba(248,160,180,0.74)" transform="rotate(38 374 402)"/>
+          <circle cx="356" cy="385" r="7" fill="rgba(255,215,80,0.9)" stroke="rgba(212,175,55,0.78)" stroke-width="1"/>
+          <circle cx="356" cy="385" r="3.5" fill="rgba(255,140,0,0.9)"/>
+        </g>
+
+        <!-- Armlets -->
+        <ellipse cx="173" cy="340" rx="14" ry="7" fill="none" stroke="url(#goldShine)" stroke-width="4" transform="rotate(-38 173 340)"/>
+        <ellipse cx="327" cy="340" rx="14" ry="7" fill="none" stroke="url(#goldShine)" stroke-width="4" transform="rotate(38 327 340)"/>
+        <ellipse cx="153" cy="410" rx="12" ry="6" fill="none" stroke="rgba(212,175,55,0.82)" stroke-width="3" transform="rotate(-50 153 410)"/>
+        <ellipse cx="347" cy="410" rx="12" ry="6" fill="none" stroke="rgba(212,175,55,0.82)" stroke-width="3" transform="rotate(50 347 410)"/>
+
+        <!-- ══════════════════════
+             HEAD / LION FACE
+        ══════════════════════ -->
+        <!-- Mane — layered golden -->
+        <circle cx="250" cy="210" r="112" fill="rgba(200,120,0,0.16)" filter="url(#glow8)"/>
+        <circle cx="250" cy="208" r="104" fill="url(#maneGrad)" filter="url(#softShadow)"/>
+        <circle cx="250" cy="210" r="92"  fill="rgba(220,140,0,0.68)"/>
+        <circle cx="250" cy="212" r="80"  fill="rgba(240,170,20,0.48)"/>
+        <!-- Mane fur strokes -->
+        <g stroke="rgba(180,100,0,0.38)" stroke-width="1.5" fill="none" stroke-linecap="round">
+          <line x1="250" y1="108" x2="250" y2="90"/><line x1="286" y1="114" x2="304" y2="100"/>
+          <line x1="310" y1="148" x2="330" y2="138"/><line x1="317" y1="182" x2="337" y2="177"/>
+          <line x1="307" y1="218" x2="326" y2="218"/><line x1="286" y1="248" x2="300" y2="256"/>
+          <line x1="214" y1="114" x2="196" y2="100"/><line x1="190" y1="148" x2="170" y2="138"/>
+          <line x1="183" y1="182" x2="163" y2="177"/><line x1="193" y1="218" x2="174" y2="218"/>
+          <line x1="214" y1="248" x2="200" y2="256"/>
+        </g>
+        <g stroke="rgba(255,215,80,0.28)" stroke-width="1" fill="none" stroke-linecap="round">
+          <line x1="250" y1="110" x2="250" y2="96"/><line x1="284" y1="117" x2="300" y2="104"/>
+          <line x1="306" y1="150" x2="322" y2="141"/><line x1="216" y1="117" x2="200" y2="104"/>
+          <line x1="194" y1="150" x2="178" y2="141"/>
+        </g>
+
+        <!-- Face base -->
+        <ellipse cx="250" cy="212" rx="70" ry="68" fill="url(#faceGrad)" filter="url(#softShadow)"/>
+        <ellipse cx="248" cy="205" rx="45" ry="42" fill="rgba(220,155,80,0.28)"/>
+        <ellipse cx="210" cy="225" rx="22" ry="18" fill="rgba(120,60,15,0.18)"/>
+        <ellipse cx="290" cy="225" rx="22" ry="18" fill="rgba(120,60,15,0.18)"/>
+
+        <!-- Crown (Kiritam) -->
+        <rect x="184" y="153" width="132" height="20" rx="6" fill="url(#goldShine)" stroke="rgba(255,220,80,0.68)" stroke-width="1.4"/>
+        <path d="M186 153 Q192 148 198 153 Q204 148 210 153 Q216 148 222 153 Q228 148 234 153 Q240 148 246 153 Q252 148 258 153 Q264 148 270 153 Q276 148 282 153 Q288 148 294 153 Q300 148 306 153 Q312 148 314 153" fill="none" stroke="rgba(255,220,80,0.52)" stroke-width="1.4"/>
+        <path d="M186 153 L192 127 L200 145 L209 109 L218 137 L226 93 L234 129 L242 79 L250 57 L258 79 L266 129 L274 93 L282 137 L291 109 L300 145 L308 127 L314 153 Z" fill="url(#goldShine)" stroke="rgba(255,220,60,0.48)" stroke-width="0.7"/>
+        <path d="M226 93 Q250 61 274 93" fill="rgba(255,215,80,0.22)" stroke="rgba(255,215,80,0.48)" stroke-width="1.1"/>
+        <!-- Kalasha tip -->
+        <ellipse cx="250" cy="61" rx="15" ry="9" fill="url(#goldShine)"/>
+        <ellipse cx="250" cy="52" rx="10" ry="7" fill="url(#goldShine)"/>
+        <circle  cx="250" cy="44" r="8"  fill="url(#goldShine)" stroke="rgba(255,220,80,0.88)" stroke-width="1.1"/>
+        <circle  cx="250" cy="36" r="4.5" fill="rgba(255,80,0,0.92)" stroke="rgba(255,200,0,0.55)" stroke-width="0.8"/>
+        <!-- Crown gems -->
+        <circle cx="250" cy="148" r="10"  fill="rgba(200,20,20,0.94)" stroke="rgba(255,100,80,0.68)" stroke-width="1.4" filter="url(#glow4)"/>
+        <circle cx="250" cy="147" r="6.5" fill="rgba(255,80,80,0.48)"/>
+        <circle cx="247" cy="144" r="3"   fill="rgba(255,180,180,0.48)"/>
+        <circle cx="228" cy="151" r="6.5" fill="rgba(30,140,210,0.9)"  stroke="rgba(100,190,255,0.48)" stroke-width="0.9"/>
+        <circle cx="272" cy="151" r="6.5" fill="rgba(30,170,80,0.9)"   stroke="rgba(80,230,120,0.48)"  stroke-width="0.9"/>
+        <circle cx="210" cy="154" r="5"   fill="rgba(212,175,55,0.94)"/>
+        <circle cx="290" cy="154" r="5"   fill="rgba(212,175,55,0.94)"/>
+
+        <!-- Ears -->
+        <ellipse cx="180" cy="210" rx="19" ry="25" fill="rgba(155,85,28,0.94)" stroke="rgba(120,60,10,0.48)" stroke-width="1"/>
+        <ellipse cx="180" cy="210" rx="12" ry="17" fill="rgba(120,62,16,0.72)"/>
+        <ellipse cx="180" cy="210" rx="7"  ry="10" fill="rgba(100,30,10,0.38)"/>
+        <circle cx="180" cy="224" r="10" fill="none" stroke="url(#goldShine)" stroke-width="3"/>
+        <circle cx="180" cy="224" r="4.5" fill="rgba(220,50,50,0.86)"/>
+        <ellipse cx="320" cy="210" rx="19" ry="25" fill="rgba(155,85,28,0.94)" stroke="rgba(120,60,10,0.48)" stroke-width="1"/>
+        <ellipse cx="320" cy="210" rx="12" ry="17" fill="rgba(120,62,16,0.72)"/>
+        <ellipse cx="320" cy="210" rx="7"  ry="10" fill="rgba(100,30,10,0.38)"/>
+        <circle cx="320" cy="224" r="10" fill="none" stroke="url(#goldShine)" stroke-width="3"/>
+        <circle cx="320" cy="224" r="4.5" fill="rgba(220,50,50,0.86)"/>
+
+        <!-- Forehead tikka + tilak -->
+        <circle cx="250" cy="173" r="9"  fill="url(#goldShine)" stroke="rgba(255,230,80,0.78)" stroke-width="1.2" filter="url(#glow4)"/>
+        <circle cx="250" cy="173" r="5"  fill="rgba(200,20,20,0.92)"/>
+        <circle cx="248" cy="171" r="2"  fill="rgba(255,150,150,0.48)"/>
+        <path d="M250 173 L250 158" stroke="url(#goldShine)" stroke-width="1.4" stroke-dasharray="2,2"/>
+        <!-- Urdhva Pundra -->
+        <rect x="242" y="182" width="7"  height="20" rx="3.5" fill="rgba(255,255,255,0.92)"/>
+        <rect x="251" y="182" width="7"  height="20" rx="3.5" fill="rgba(255,255,255,0.92)"/>
+        <rect x="244" y="185" width="12" height="14" rx="3"   fill="rgba(255,60,0,0.76)"/>
+
+        <!-- Eyes — large, golden, fierce -->
+        <ellipse cx="218" cy="210" rx="24" ry="19" fill="rgba(80,40,5,0.32)"/>
+        <ellipse cx="282" cy="210" rx="24" ry="19" fill="rgba(80,40,5,0.32)"/>
+        <ellipse cx="218" cy="210" rx="22" ry="16" fill="rgba(255,250,225,0.97)"/>
+        <ellipse cx="282" cy="210" rx="22" ry="16" fill="rgba(255,250,225,0.97)"/>
+        <circle cx="218" cy="210" r="13" fill="url(#eyeIris)"/>
+        <circle cx="282" cy="210" r="13" fill="url(#eyeIris)"/>
+        <ellipse cx="218" cy="210" rx="5" ry="9" fill="rgba(8,2,0,0.97)"/>
+        <ellipse cx="282" cy="210" rx="5" ry="9" fill="rgba(8,2,0,0.97)"/>
+        <circle cx="218" cy="210" r="13" fill="none" stroke="rgba(200,150,0,0.38)" stroke-width="1.4"/>
+        <circle cx="282" cy="210" r="13" fill="none" stroke="rgba(200,150,0,0.38)" stroke-width="1.4"/>
+        <!-- Highlights -->
+        <circle cx="221" cy="205" r="4"   fill="rgba(255,255,240,0.9)"/>
+        <circle cx="213" cy="215" r="1.8" fill="rgba(255,255,220,0.58)"/>
+        <circle cx="285" cy="205" r="4"   fill="rgba(255,255,240,0.9)"/>
+        <circle cx="277" cy="215" r="1.8" fill="rgba(255,255,220,0.58)"/>
+        <!-- Brows (fierce) -->
+        <path d="M196 199 Q218 190 240 199" fill="rgba(50,20,0,0.58)" stroke="none"/>
+        <path d="M198 200 Q218 194 238 200" fill="none" stroke="rgba(20,5,0,0.84)" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M260 200 Q282 190 304 199" fill="rgba(50,20,0,0.58)" stroke="none"/>
+        <path d="M262 200 Q282 194 302 200" fill="none" stroke="rgba(20,5,0,0.84)" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M196 196 Q218 186 240 195" fill="none" stroke="rgba(15,5,0,0.78)" stroke-width="4.5" stroke-linecap="round"/>
+        <path d="M260 195 Q282 186 304 196" fill="none" stroke="rgba(15,5,0,0.78)" stroke-width="4.5" stroke-linecap="round"/>
+        <!-- Lower lids + kajal -->
+        <path d="M196 220 Q218 228 240 221" fill="none" stroke="rgba(100,55,8,0.32)" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M260 221 Q282 228 304 220" fill="none" stroke="rgba(100,55,8,0.32)" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M196 220 Q185 224 180 222" fill="none" stroke="rgba(10,0,0,0.58)" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M304 220 Q315 224 320 222" fill="none" stroke="rgba(10,0,0,0.58)" stroke-width="1.4" stroke-linecap="round"/>
+
+        <!-- Nose / Muzzle -->
+        <ellipse cx="250" cy="232" rx="28" ry="22" fill="rgba(165,90,25,0.86)"/>
+        <ellipse cx="248" cy="225" rx="18" ry="12" fill="rgba(200,130,55,0.32)"/>
+        <ellipse cx="250" cy="226" rx="18" ry="14" fill="rgba(90,40,5,0.9)"/>
+        <ellipse cx="250" cy="224" rx="12" ry="9"  fill="rgba(70,25,0,0.58)"/>
+        <ellipse cx="246" cy="220" rx="6"  ry="4"  fill="rgba(130,70,20,0.38)"/>
+        <ellipse cx="240" cy="232" rx="8"  ry="6.5" fill="rgba(40,12,0,0.84)"/>
+        <ellipse cx="260" cy="232" rx="8"  ry="6.5" fill="rgba(40,12,0,0.84)"/>
+        <!-- Whisker dots -->
+        <g fill="rgba(80,40,5,0.48)">
+          <circle cx="200" cy="235" r="2.5"/><circle cx="204" cy="242" r="2.5"/><circle cx="200" cy="249" r="2.5"/>
+          <circle cx="300" cy="235" r="2.5"/><circle cx="296" cy="242" r="2.5"/><circle cx="300" cy="249" r="2.5"/>
+        </g>
+        <!-- Whisker lines -->
+        <g stroke="rgba(220,200,150,0.32)" stroke-width="0.8" stroke-linecap="round" fill="none">
+          <line x1="200" y1="238" x2="164" y2="233"/><line x1="204" y1="244" x2="164" y2="244"/><line x1="200" y1="250" x2="164" y2="253"/>
+          <line x1="300" y1="238" x2="336" y2="233"/><line x1="296" y1="244" x2="336" y2="244"/><line x1="300" y1="250" x2="336" y2="253"/>
+        </g>
+
+        <!-- Mouth — slightly open, dignified -->
+        <path d="M208 254 Q250 273 292 254 Q290 283 270 293 Q255 299 250 299 Q245 299 230 293 Q210 283 208 254 Z" fill="rgba(60,8,8,0.95)" stroke="rgba(130,60,10,0.38)" stroke-width="0.8"/>
+        <path d="M210 254 Q230 263 250 266 Q270 263 290 254" fill="rgba(100,30,8,0.68)"/>
+        <!-- Teeth -->
+        <rect x="220" y="254" width="9"  height="12" rx="3" fill="rgba(255,252,238,0.94)"/>
+        <rect x="230" y="254" width="9"  height="14" rx="3" fill="rgba(255,255,245,0.97)"/>
+        <rect x="240" y="255" width="9"  height="14" rx="3" fill="rgba(255,255,245,0.97)"/>
+        <rect x="250" y="255" width="9"  height="14" rx="3" fill="rgba(255,255,245,0.97)"/>
+        <rect x="260" y="254" width="9"  height="12" rx="3" fill="rgba(255,252,238,0.94)"/>
+        <!-- Canines -->
+        <path d="M208 254 L214 273 L221 254" fill="rgba(255,252,238,0.94)"/>
+        <path d="M279 254 L286 273 L292 254" fill="rgba(255,252,238,0.94)"/>
+        <!-- Tongue -->
+        <ellipse cx="250" cy="277" rx="18" ry="9" fill="rgba(190,40,40,0.78)"/>
+        <path d="M232 277 Q250 285 268 277" fill="rgba(160,20,20,0.48)"/>
+        <path d="M212 276 Q250 291 288 276" fill="rgba(100,30,8,0.52)"/>
+
+        <!-- ══════════════════════
+             GODDESS LAKSHMI
+        ══════════════════════ -->
+        <g transform="translate(360,342)" opacity="0.96">
+          <!-- Halo -->
+          <circle cx="0" cy="-40" r="54" fill="rgba(255,200,100,0.08)" stroke="rgba(212,175,55,0.32)" stroke-width="0.9"/>
+          <!-- Lower body/seated -->
+          <ellipse cx="0" cy="120" rx="52" ry="20" fill="rgba(194,24,91,0.62)" transform="rotate(-3 0 120)"/>
+          <path d="M-45 80 Q0 105 45 80 L42 140 Q20 155 0 157 Q-20 155 -42 140 Z" fill="url(#laxmiSaree)" opacity="0.87"/>
+          <path d="M-44 82 Q0 106 44 82" fill="none" stroke="rgba(212,175,55,0.78)" stroke-width="2.4"/>
+          <path d="M-42 87 Q0 110 42 87" fill="none" stroke="rgba(255,220,80,0.38)" stroke-width="1.1"/>
+          <path d="M-20 90 Q-25 120 -22 140" fill="none" stroke="rgba(150,10,60,0.28)" stroke-width="0.9"/>
+          <path d="M20  90 Q25  120 22  140" fill="none" stroke="rgba(150,10,60,0.28)" stroke-width="0.9"/>
+          <!-- Torso -->
+          <ellipse cx="0" cy="58" rx="30" ry="32" fill="url(#laxmiSkin)"/>
+          <path d="M-26 65 Q0 78 26 65 L24 90 Q0 100 -24 90 Z" fill="rgba(220,30,80,0.72)" stroke="rgba(212,175,55,0.48)" stroke-width="0.7"/>
+          <path d="M-25 66 Q0 78 25 66" fill="none" stroke="rgba(212,175,55,0.68)" stroke-width="1.4"/>
+          <!-- Necklace -->
+          <path d="M-18 42 Q0 52 18 42" fill="none" stroke="rgba(212,175,55,0.84)" stroke-width="2"/>
+          <circle cx="0" cy="49" r="4" fill="rgba(212,175,55,0.9)"/>
+          <circle cx="-9" cy="46" r="2.4" fill="rgba(212,175,55,0.78)"/>
+          <circle cx="9"  cy="46" r="2.4" fill="rgba(212,175,55,0.78)"/>
+          <!-- Head -->
+          <circle cx="0" cy="-40" r="28" fill="url(#laxmiSkin)" filter="url(#softShadow)"/>
+          <ellipse cx="-3" cy="-46" rx="16" ry="14" fill="rgba(250,215,155,0.28)"/>
+          <!-- Hair -->
+          <path d="M-26 -55 Q0 -80 26 -55 Q32 -40 28 -18" fill="rgba(18,8,0,0.92)" stroke="rgba(10,4,0,0.48)" stroke-width="0.5"/>
+          <!-- Tikka -->
+          <circle cx="0" cy="-66" r="6" fill="url(#goldShine)" stroke="rgba(255,220,80,0.68)" stroke-width="0.8" filter="url(#glow4)"/>
+          <circle cx="0" cy="-66" r="3" fill="rgba(200,20,20,0.9)"/>
+          <path d="M0 -66 L0 -55" stroke="url(#goldShine)" stroke-width="1" stroke-dasharray="1.5,1.5"/>
+          <!-- Jasmine flowers -->
+          <g fill="rgba(255,255,240,0.9)" stroke="rgba(200,180,100,0.48)" stroke-width="0.5">
+            <circle cx="-18" cy="-58" r="3.5"/><circle cx="-12" cy="-64" r="3"/>
+            <circle cx="-5"  cy="-68" r="2.5"/><circle cx="5"   cy="-68" r="2.5"/>
+            <circle cx="12"  cy="-64" r="3"/><circle cx="18"  cy="-58" r="3.5"/>
+          </g>
+          <!-- Bindi -->
+          <circle cx="0" cy="-52" r="3.5" fill="rgba(210,20,20,0.95)" filter="url(#glow4)"/>
+          <!-- Left eye -->
+          <ellipse cx="-10" cy="-42" rx="9" ry="6.5" fill="rgba(255,250,225,0.97)"/>
+          <circle  cx="-10" cy="-42" r="5" fill="rgba(40,20,60,0.97)"/>
+          <circle  cx="-8"  cy="-44" r="2.2" fill="white"/>
+          <path d="M-20 -41 Q-10 -47 0 -41" fill="none" stroke="rgba(10,5,0,0.78)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M-20 -42 Q-22 -40 -20 -38" fill="none" stroke="rgba(10,5,0,0.58)" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M-20 -37 Q-10 -34 0 -37" fill="none" stroke="rgba(10,5,0,0.28)" stroke-width="0.8" stroke-linecap="round"/>
+          <!-- Right eye -->
+          <ellipse cx="10" cy="-42" rx="9" ry="6.5" fill="rgba(255,250,225,0.97)"/>
+          <circle  cx="10" cy="-42" r="5" fill="rgba(40,20,60,0.97)"/>
+          <circle  cx="12" cy="-44" r="2.2" fill="white"/>
+          <path d="M0 -41 Q10 -47 20 -41" fill="none" stroke="rgba(10,5,0,0.78)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 -42 Q22 -40 20 -38" fill="none" stroke="rgba(10,5,0,0.58)" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M0 -37 Q10 -34 20 -37" fill="none" stroke="rgba(10,5,0,0.28)" stroke-width="0.8" stroke-linecap="round"/>
+          <!-- Nose -->
+          <ellipse cx="0" cy="-32" rx="5" ry="4" fill="rgba(200,145,75,0.58)"/>
+          <ellipse cx="-3" cy="-30" rx="2.5" ry="2" fill="rgba(160,95,30,0.38)"/>
+          <ellipse cx="3"  cy="-30" rx="2.5" ry="2" fill="rgba(160,95,30,0.38)"/>
+          <circle cx="-5" cy="-31" r="1.5" fill="rgba(212,175,55,0.88)"/>
+          <!-- Lips -->
+          <path d="M-10 -22 Q0 -16 10 -22 Q8 -8 0 -6 Q-8 -8 -10 -22 Z" fill="rgba(200,60,80,0.86)"/>
+          <path d="M-10 -22 Q0 -18 10 -22" fill="rgba(220,90,100,0.58)"/>
+          <path d="M-8 -18 Q0 -12 8 -18" fill="none" stroke="rgba(150,40,60,0.48)" stroke-width="0.8"/>
+          <!-- Arms -->
+          <path d="M-28 55 Q-48 70 -55 88 Q-58 96 -56 105" stroke="url(#laxmiSkin)" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <!-- Lotus in left hand -->
+          <g transform="translate(-56,108)">
+            <ellipse cx="0" cy="0" rx="10" ry="16" fill="rgba(230,80,120,0.88)"/>
+            <ellipse cx="-9" cy="4" rx="8" ry="13" fill="rgba(248,140,165,0.78)" transform="rotate(-22 -9 4)"/>
+            <ellipse cx="9"  cy="4" rx="8" ry="13" fill="rgba(248,140,165,0.78)" transform="rotate(22 9 4)"/>
+            <ellipse cx="-14" cy="10" rx="7" ry="10" fill="rgba(255,180,200,0.68)" transform="rotate(-38 -14 10)"/>
+            <ellipse cx="14"  cy="10" rx="7" ry="10" fill="rgba(255,180,200,0.68)" transform="rotate(38 14 10)"/>
+            <circle cx="0" cy="0" r="6" fill="rgba(255,215,80,0.9)"/>
+            <circle cx="0" cy="0" r="3" fill="rgba(255,140,0,0.9)"/>
+            <line x1="0" y1="16" x2="0" y2="38" stroke="#2E7D32" stroke-width="2.4" stroke-linecap="round"/>
+          </g>
+          <!-- Right arm -->
+          <path d="M28 55 Q44 68 48 86 Q50 95 48 105" stroke="url(#laxmiSkin)" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <ellipse cx="48" cy="110" rx="10" ry="8" fill="rgba(235,185,115,0.9)"/>
+          <!-- Gold coins from palm -->
+          <circle cx="44" cy="106" r="5"   fill="rgba(212,175,55,0.86)" stroke="rgba(255,220,80,0.58)" stroke-width="0.8"/>
+          <circle cx="50" cy="102" r="4.5" fill="rgba(212,175,55,0.78)"/>
+          <circle cx="42" cy="100" r="4"   fill="rgba(212,175,55,0.72)"/>
+          <!-- Ornaments -->
+          <ellipse cx="-40" cy="72" rx="8" ry="4" fill="none" stroke="url(#goldShine)" stroke-width="2.4" transform="rotate(-40 -40 72)"/>
+          <ellipse cx="40"  cy="70" rx="8" ry="4" fill="none" stroke="url(#goldShine)" stroke-width="2.4" transform="rotate(40 40 70)"/>
+          <ellipse cx="-54" cy="98" rx="6" ry="3" fill="none" stroke="rgba(212,175,55,0.78)" stroke-width="1.8" transform="rotate(-50 -54 98)"/>
+          <ellipse cx="-54" cy="103" rx="6" ry="3" fill="none" stroke="rgba(220,50,50,0.68)" stroke-width="1.8" transform="rotate(-50 -54 103)"/>
+          <ellipse cx="47" cy="98"  rx="6" ry="3" fill="none" stroke="rgba(212,175,55,0.78)" stroke-width="1.8" transform="rotate(48 47 98)"/>
+          <ellipse cx="47" cy="103" rx="6" ry="3" fill="none" stroke="rgba(220,50,50,0.68)" stroke-width="1.8" transform="rotate(48 47 103)"/>
+          <!-- Ear ornaments -->
+          <circle cx="-28" cy="-40" r="6" fill="none" stroke="url(#goldShine)" stroke-width="2"/>
+          <circle cx="-28" cy="-40" r="2.5" fill="rgba(220,50,50,0.86)"/>
+          <line x1="-28" y1="-34" x2="-28" y2="-26" stroke="url(#goldShine)" stroke-width="1"/>
+          <circle cx="-28" cy="-24" r="3" fill="rgba(212,175,55,0.86)"/>
+          <circle cx="28" cy="-40" r="6" fill="none" stroke="url(#goldShine)" stroke-width="2"/>
+          <circle cx="28" cy="-40" r="2.5" fill="rgba(220,50,50,0.86)"/>
+          <line x1="28" y1="-34" x2="28" y2="-26" stroke="url(#goldShine)" stroke-width="1"/>
+          <circle cx="28" cy="-24" r="3" fill="rgba(212,175,55,0.86)"/>
+        </g>
+
+        <!-- ── DIVINE PARTICLES ── -->
+        <circle cx="120" cy="155" r="3"   fill="rgba(255,215,80,0.8)"><animate attributeName="opacity" values="0;1;0" dur="2.1s" repeatCount="indefinite" begin="0s"/></circle>
+        <circle cx="380" cy="140" r="3.5" fill="rgba(255,215,80,0.7)"><animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite" begin="0.4s"/></circle>
+        <circle cx="95"  cy="270" r="2.5" fill="rgba(255,140,0,0.7)"><animate attributeName="opacity" values="0;1;0" dur="1.9s" repeatCount="indefinite" begin="0.9s"/></circle>
+        <circle cx="405" cy="260" r="3"   fill="rgba(201,100,144,0.7)"><animate attributeName="opacity" values="0;1;0" dur="2.3s" repeatCount="indefinite" begin="0.2s"/></circle>
+        <circle cx="165" cy="90"  r="2.5" fill="rgba(255,215,80,0.85)"><animate attributeName="opacity" values="0;1;0" dur="1.6s" repeatCount="indefinite" begin="1.1s"/></circle>
+        <circle cx="335" cy="85"  r="2.5" fill="rgba(255,140,0,0.8)"><animate attributeName="opacity" values="0;1;0" dur="2.0s" repeatCount="indefinite" begin="0.7s"/></circle>
+        <circle cx="58"  cy="400" r="2"   fill="rgba(212,175,55,0.58)"><animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="1.5s"/></circle>
+        <circle cx="442" cy="390" r="2"   fill="rgba(201,100,144,0.58)"><animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite" begin="0.6s"/></circle>
+        <circle cx="250" cy="40"  r="3"   fill="rgba(255,220,60,0.8)"><animate attributeName="opacity" values="0;1;0" dur="1.7s" repeatCount="indefinite" begin="0.3s"/></circle>
+        <circle cx="200" cy="500" r="2"   fill="rgba(100,200,255,0.48)"><animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite" begin="1.0s"/></circle>
+        <circle cx="300" cy="510" r="2"   fill="rgba(100,200,255,0.48)"><animate attributeName="opacity" values="0;1;0" dur="1.9s" repeatCount="indefinite" begin="0.5s"/></circle>
+
+        <!-- Bottom text: Telugu caption -->
+        <text x="250" y="605" text-anchor="middle" font-family="'Noto Serif Telugu', serif" font-size="14" fill="rgba(212,175,55,0.88)" letter-spacing="1">శ్రీ లక్ష్మీ నరసింహ స్వామి</text>
+      </svg>
+    </div>
+
+    <!-- OLD SVG REMOVED -->
+    <div style="display:none">
+      <div class="deity-frame">
+      <div class="deity-glow"></div>
+      <svg class="deity-svg" viewBox="0 0 380 480" xmlns="http://www.w3.org/2000/svg" aria-label="Yogananda Lakshmi Narasimha Swamy">
+        <defs>
+          <radialGradient id="haloGlow" cx="50%" cy="42%" r="50%">
+            <stop offset="0%"   stop-color="rgba(212,175,55,0.18)"/>
+            <stop offset="55%"  stop-color="rgba(255,140,0,0.06)"/>
+            <stop offset="100%" stop-color="transparent"/>
+          </radialGradient>
+          <radialGradient id="bodyBlue" cx="50%" cy="35%" r="65%">
+            <stop offset="0%"   stop-color="#4A5FC4"/>
+            <stop offset="60%"  stop-color="#2C3A9E"/>
+            <stop offset="100%" stop-color="#1A2570"/>
+          </radialGradient>
+          <radialGradient id="faceColor" cx="45%" cy="38%" r="60%">
+            <stop offset="0%"   stop-color="#C4885A"/>
+            <stop offset="70%"  stop-color="#9B5C2A"/>
+            <stop offset="100%" stop-color="#7A3F10"/>
+          </radialGradient>
+          <radialGradient id="maneColor" cx="50%" cy="40%" r="55%">
+            <stop offset="0%"   stop-color="#5C3208"/>
+            <stop offset="100%" stop-color="#2A1200"/>
+          </radialGradient>
+          <radialGradient id="eyeYellow" cx="40%" cy="30%" r="55%">
+            <stop offset="0%"   stop-color="#FFF176"/>
+            <stop offset="100%" stop-color="#F59F00"/>
+          </radialGradient>
+          <radialGradient id="goldShine" cx="35%" cy="30%" r="55%">
+            <stop offset="0%"   stop-color="#FFE066"/>
+            <stop offset="100%" stop-color="#B8860B"/>
+          </radialGradient>
+          <radialGradient id="lotusRose" cx="50%" cy="40%" r="55%">
+            <stop offset="0%"   stop-color="#F48FB1"/>
+            <stop offset="100%" stop-color="#C2185B"/>
+          </radialGradient>
+          <filter id="softBlur">
+            <feGaussianBlur stdDeviation="2.5" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="goldGlow">
+            <feGaussianBlur stdDeviation="4" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- ═══ PRABHAVALI — Divine Halo ═══ -->
+        <circle cx="190" cy="210" r="160" fill="url(#haloGlow)"/>
+        <!-- Lotus-petal halo ring -->
+        <g fill="rgba(212,175,55,0.07)" stroke="rgba(212,175,55,0.22)" stroke-width="0.8">
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(0   190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(30  190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(60  190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(90  190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(120 190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(150 190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(180 190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(210 190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(240 190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(270 190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(300 190 210)"/>
+          <ellipse cx="190" cy="65"  rx="13" ry="26" transform="rotate(330 190 210)"/>
+        </g>
+        <!-- Halo rings -->
+        <circle cx="190" cy="210" r="148" fill="none" stroke="rgba(212,175,55,0.30)" stroke-width="2"/>
+        <circle cx="190" cy="210" r="142" fill="none" stroke="rgba(212,175,55,0.12)" stroke-width="0.8"/>
+        <circle cx="190" cy="210" r="130" fill="none" stroke="rgba(255,140,0,0.10)"  stroke-width="1"/>
+        <!-- Radiating rays -->
+        <g stroke="rgba(212,175,55,0.18)" stroke-width="1" stroke-linecap="round">
+          <line x1="190" y1="62"  x2="190" y2="38"/>
+          <line x1="254" y1="80"  x2="272" y2="62"/>
+          <line x1="296" y1="136" x2="318" y2="126"/>
+          <line x1="305" y1="200" x2="330" y2="198"/>
+          <line x1="276" y1="260" x2="296" y2="272"/>
+          <line x1="222" y1="302" x2="234" y2="320"/>
+          <line x1="158" y1="302" x2="146" y2="320"/>
+          <line x1="104" y1="260" x2="84"  y2="272"/>
+          <line x1="75"  y1="200" x2="50"  y2="198"/>
+          <line x1="84"  y1="136" x2="62"  y2="126"/>
+          <line x1="126" y1="80"  x2="108" y2="62"/>
+        </g>
+
+        <!-- ═══ LOTUS THRONE ═══ -->
+        <!-- Platform base -->
+        <ellipse cx="190" cy="448" rx="88"  ry="16" fill="rgba(212,175,55,0.25)" stroke="rgba(212,175,55,0.5)" stroke-width="1.2"/>
+        <ellipse cx="190" cy="440" rx="78"  ry="13" fill="rgba(212,175,55,0.15)" stroke="rgba(212,175,55,0.3)" stroke-width="0.8"/>
+        <!-- Lower lotus petals -->
+        <g fill="rgba(194,24,91,0.45)" stroke="rgba(233,30,99,0.6)" stroke-width="0.8">
+          <ellipse cx="125" cy="434" rx="22" ry="11" transform="rotate(-22 125 434)"/>
+          <ellipse cx="153" cy="428" rx="24" ry="11" transform="rotate(-10 153 428)"/>
+          <ellipse cx="190" cy="426" rx="25" ry="11"/>
+          <ellipse cx="227" cy="428" rx="24" ry="11" transform="rotate(10 227 428)"/>
+          <ellipse cx="255" cy="434" rx="22" ry="11" transform="rotate(22 255 434)"/>
+        </g>
+        <!-- Upper lotus petals -->
+        <g fill="rgba(240,98,146,0.38)" stroke="rgba(194,24,91,0.5)" stroke-width="0.7">
+          <ellipse cx="140" cy="422" rx="19" ry="10" transform="rotate(-16 140 422)"/>
+          <ellipse cx="166" cy="417" rx="21" ry="10" transform="rotate(-6  166 417)"/>
+          <ellipse cx="190" cy="415" rx="22" ry="10"/>
+          <ellipse cx="214" cy="417" rx="21" ry="10" transform="rotate(6   214 417)"/>
+          <ellipse cx="240" cy="422" rx="19" ry="10" transform="rotate(16  240 422)"/>
+        </g>
+
+        <!-- ═══ LOWER BODY — Seated (Yoga Narasimha) ═══ -->
+        <!-- Crossed legs suggestion -->
+        <ellipse cx="148" cy="400" rx="52" ry="24" fill="url(#bodyBlue)" transform="rotate(-5 148 400)"/>
+        <ellipse cx="232" cy="400" rx="52" ry="24" fill="url(#bodyBlue)" transform="rotate(5  232 400)"/>
+        <!-- Saffron dhoti -->
+        <path d="M106 388 Q150 410 190 408 Q230 410 274 388 L268 426 Q230 438 190 438 Q150 438 112 426 Z"
+              fill="rgba(255,140,0,0.65)" stroke="rgba(212,175,55,0.55)" stroke-width="1.2"/>
+        <!-- Dhoti gold border lines -->
+        <path d="M108 390 Q190 412 272 390" fill="none" stroke="rgba(212,175,55,0.8)" stroke-width="2.2"/>
+        <path d="M112 396 Q190 417 268 396" fill="none" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+        <!-- Waist band -->
+        <path d="M130 330 Q190 342 250 330" fill="none" stroke="rgba(212,175,55,0.85)" stroke-width="3.5"/>
+        <path d="M130 335 Q190 347 250 335" fill="none" stroke="rgba(255,200,50,0.35)" stroke-width="1.2"/>
+        <!-- Waist jewel -->
+        <circle cx="190" cy="332" r="6" fill="rgba(212,175,55,0.8)" stroke="rgba(255,220,80,0.9)" stroke-width="1"/>
+        <circle cx="190" cy="332" r="3" fill="rgba(255,80,0,0.85)"/>
+
+        <!-- ═══ TORSO ═══ -->
+        <path d="M148 248 Q142 295 140 330 Q163 344 190 345 Q217 344 240 330 Q238 295 232 248 Q214 256 190 257 Q166 256 148 248 Z"
+              fill="url(#bodyBlue)"/>
+        <!-- Chest sacred thread (Yajnopavita) -->
+        <path d="M165 255 Q180 290 175 318" fill="none" stroke="rgba(255,248,231,0.55)" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- ═══ KAUSTUBHA GEM + SRIVATSA ═══ -->
+        <!-- Kaustubha gem (divine ruby on chest) -->
+        <ellipse cx="190" cy="272" rx="10" ry="14" fill="rgba(200,30,30,0.85)" stroke="rgba(212,175,55,0.9)" stroke-width="1.8"/>
+        <ellipse cx="190" cy="271" rx="6.5" ry="9" fill="rgba(255,80,80,0.5)"/>
+        <ellipse cx="188" cy="268" rx="3"   ry="4"  fill="rgba(255,200,200,0.4)"/>
+        <!-- Srivatsa curl on chest -->
+        <path d="M180 292 Q190 285 200 292 Q202 300 190 305 Q178 300 180 292 Z"
+              fill="none" stroke="rgba(212,175,55,0.6)" stroke-width="1.2"/>
+
+        <!-- ═══ NECKLACE ═══ -->
+        <!-- Vanamala (garland) -->
+        <path d="M158 258 Q175 272 190 276 Q205 272 222 258"
+              fill="none" stroke="rgba(80,160,70,0.5)" stroke-width="3" stroke-dasharray="4,3" stroke-linecap="round"/>
+        <!-- Necklace chain -->
+        <path d="M158 252 Q190 267 222 252" fill="none" stroke="rgba(212,175,55,0.85)" stroke-width="2.5"/>
+        <path d="M161 256 Q190 271 219 256" fill="none" stroke="rgba(212,175,55,0.4)"  stroke-width="1.2"/>
+        <!-- Chain pendant -->
+        <circle cx="190" cy="271" r="0" fill="none"/><!-- placeholder - Kaustubha already covers it -->
+
+        <!-- ═══ ORNAMENTS / JEWELRY ═══ -->
+        <!-- Upper armlets (Angada) -->
+        <ellipse cx="143" cy="268" rx="12" ry="6" fill="none" stroke="url(#goldShine)" stroke-width="3.5" transform="rotate(-35 143 268)"/>
+        <ellipse cx="237" cy="268" rx="12" ry="6" fill="none" stroke="url(#goldShine)" stroke-width="3.5" transform="rotate(35  237 268)"/>
+        <!-- Lower armlets -->
+        <ellipse cx="120" cy="322" rx="10" ry="5"  fill="none" stroke="rgba(212,175,55,0.8)" stroke-width="2.8" transform="rotate(-45 120 322)"/>
+        <ellipse cx="260" cy="322" rx="10" ry="5"  fill="none" stroke="rgba(212,175,55,0.8)" stroke-width="2.8" transform="rotate(45  260 322)"/>
+
+        <!-- ═══ FOUR ARMS ═══ -->
+
+        <!-- Upper-Left Arm → Shankha (Conch) -->
+        <path d="M152 252 Q126 232 104 208 Q96 196 92 183"
+              stroke="url(#bodyBlue)" stroke-width="19" fill="none" stroke-linecap="round"/>
+        <!-- Conch (Shankha) -->
+        <g transform="translate(86,172) rotate(-18)">
+          <ellipse cx="0" cy="0" rx="17" ry="23" fill="rgba(255,252,235,0.88)" stroke="rgba(212,175,55,0.7)" stroke-width="1.5"/>
+          <ellipse cx="0" cy="0" rx="11" ry="15" fill="rgba(255,252,235,0.5)"/>
+          <path d="M-10 -12 Q-6 -20 0 -16" fill="none" stroke="rgba(200,180,130,0.7)" stroke-width="1.5"/>
+          <path d="M-8  -5  Q-5 -13 1  -9"  fill="none" stroke="rgba(200,180,130,0.5)" stroke-width="1"/>
+          <path d="M-5  17  Q-3  24 2  28"  fill="none" stroke="rgba(200,180,130,0.6)" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+
+        <!-- Upper-Right Arm → Sudarshana Chakra (spinning) -->
+        <path d="M228 252 Q254 232 276 208 Q284 196 288 183"
+              stroke="url(#bodyBlue)" stroke-width="19" fill="none" stroke-linecap="round"/>
+        <!-- Chakra wheel -->
+        <g>
+          <g transform="translate(294,170)">
+            <!-- Outer flame ring -->
+            <circle cx="0" cy="0" r="30" fill="rgba(255,140,0,0.12)" stroke="rgba(255,140,0,0.5)" stroke-width="1"/>
+            <!-- Serrated flame teeth -->
+            <g fill="rgba(255,120,0,0.75)" stroke="rgba(212,175,55,0.5)" stroke-width="0.5">
+              <polygon points="0,-30  3.5,-22 -3.5,-22"/>
+              <polygon points="21,-21 19,-14  14,-18"/>
+              <polygon points="30,0   22,3.5  22,-3.5"/>
+              <polygon points="21,21  14,18   19,14"/>
+              <polygon points="0,30  -3.5,22  3.5,22"/>
+              <polygon points="-21,21 -19,14 -14,18"/>
+              <polygon points="-30,0 -22,-3.5 -22,3.5"/>
+              <polygon points="-21,-21 -14,-18 -19,-14"/>
+            </g>
+            <!-- Main wheel ring -->
+            <circle cx="0" cy="0" r="22" fill="rgba(212,175,55,0.15)" stroke="rgba(212,175,55,0.9)" stroke-width="2.5"/>
+            <!-- Inner ring -->
+            <circle cx="0" cy="0" r="15" fill="rgba(212,175,55,0.1)"  stroke="rgba(212,175,55,0.5)" stroke-width="1.2"/>
+            <!-- Spokes -->
+            <g stroke="rgba(212,175,55,0.88)" stroke-width="1.8" stroke-linecap="round">
+              <line x1="0" y1="-15" x2="0"   y2="15"/>
+              <line x1="-15" y1="0" x2="15"  y2="0"/>
+              <line x1="-11" y1="-11" x2="11" y2="11"/>
+              <line x1="11"  y1="-11" x2="-11" y2="11"/>
+            </g>
+            <!-- Hub -->
+            <circle cx="0" cy="0" r="6.5" fill="url(#goldShine)" stroke="rgba(255,220,80,0.9)" stroke-width="1.2"/>
+            <circle cx="0" cy="0" r="3"   fill="rgba(255,100,0,0.85)"/>
+            <!-- Spinning animation -->
+            <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite" additive="sum"/>
+          </g>
+        </g>
+
+        <!-- Lower-Left Arm → Varada Mudra (blessing, palm out-down) -->
+        <path d="M152 268 Q135 295 122 328 Q118 340 118 352"
+              stroke="url(#bodyBlue)" stroke-width="17" fill="none" stroke-linecap="round"/>
+        <!-- Blessing hand -->
+        <ellipse cx="118" cy="358" rx="13" ry="10" fill="#2C3A9E"/>
+        <line x1="108" y1="361" x2="104" y2="372" stroke="#3949AB" stroke-width="4"   stroke-linecap="round"/>
+        <line x1="114" y1="364" x2="111" y2="376" stroke="#3949AB" stroke-width="4"   stroke-linecap="round"/>
+        <line x1="120" y1="365" x2="119" y2="377" stroke="#3949AB" stroke-width="4"   stroke-linecap="round"/>
+        <line x1="126" y1="363" x2="126" y2="374" stroke="#3949AB" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="107" y1="356" x2="102" y2="364" stroke="#3949AB" stroke-width="4"   stroke-linecap="round"/>
+        <!-- Gold ring on blessing hand -->
+        <ellipse cx="120" cy="367" rx="9" ry="4" fill="none" stroke="rgba(212,175,55,0.7)" stroke-width="1.8" transform="rotate(5 120 367)"/>
+
+        <!-- Lower-Right Arm → Lotus (Padma) -->
+        <path d="M228 268 Q245 295 258 328 Q262 340 262 352"
+              stroke="url(#bodyBlue)" stroke-width="17" fill="none" stroke-linecap="round"/>
+        <ellipse cx="262" cy="358" rx="13" ry="10" fill="#2C3A9E"/>
+        <!-- Lotus stem -->
+        <line x1="262" y1="345" x2="262" y2="308" stroke="#2E7D32" stroke-width="3" stroke-linecap="round"/>
+        <!-- Lotus petals -->
+        <g>
+          <ellipse cx="262" cy="301" rx="8"  ry="13" fill="url(#lotusRose)" stroke="rgba(194,24,91,0.7)" stroke-width="0.8"/>
+          <ellipse cx="252" cy="305" rx="7"  ry="11" fill="rgba(240,98,146,0.8)" stroke="rgba(194,24,91,0.6)" stroke-width="0.7" transform="rotate(-22 252 305)"/>
+          <ellipse cx="272" cy="305" rx="7"  ry="11" fill="rgba(240,98,146,0.8)" stroke="rgba(194,24,91,0.6)" stroke-width="0.7" transform="rotate(22  272 305)"/>
+          <ellipse cx="248" cy="312" rx="6"  ry="9"  fill="rgba(248,187,208,0.7)" transform="rotate(-35 248 312)"/>
+          <ellipse cx="276" cy="312" rx="6"  ry="9"  fill="rgba(248,187,208,0.7)" transform="rotate(35  276 312)"/>
+          <!-- Lotus centre -->
+          <circle  cx="262" cy="301" r="5"  fill="rgba(255,215,80,0.85)" stroke="rgba(212,175,55,0.7)" stroke-width="0.8"/>
+          <circle  cx="262" cy="301" r="2.5" fill="rgba(255,140,0,0.9)"/>
+        </g>
+
+        <!-- ═══ NECK ═══ -->
+        <path d="M173 232 Q190 238 207 232 L205 250 Q190 255 175 250 Z" fill="url(#bodyBlue)"/>
+        <!-- Neck ornament (Kantha) -->
+        <rect x="170" y="228" width="40" height="7" rx="3.5" fill="url(#goldShine)" stroke="rgba(255,220,80,0.7)" stroke-width="0.8"/>
+        <circle cx="181" cy="231" r="2.5" fill="rgba(220,50,50,0.9)"/>
+        <circle cx="190" cy="232" r="3"   fill="rgba(80,160,255,0.85)"/>
+        <circle cx="199" cy="231" r="2.5" fill="rgba(50,180,80,0.9)"/>
+
+        <!-- ═══ HEAD — Majestic Lion Face ═══ -->
+
+        <!-- Mane — dark rich fur, layered -->
+        <circle cx="190" cy="172" r="78" fill="url(#maneColor)" filter="url(#softBlur)"/>
+        <circle cx="190" cy="172" r="68" fill="rgba(70,35,5,0.45)"/>
+
+        <!-- Face base -->
+        <ellipse cx="190" cy="175" rx="56" ry="54" fill="url(#faceColor)"/>
+
+        <!-- ═══ CROWN — Ornate Kiritam ═══ -->
+        <!-- Crown base band -->
+        <rect x="138" y="128" width="104" height="16" rx="5" fill="url(#goldShine)" stroke="rgba(255,220,80,0.7)" stroke-width="1.2"/>
+        <!-- Crown decorative band pattern -->
+        <path d="M140 128 Q145 124 150 128 Q155 124 160 128 Q165 124 170 128 Q175 124 180 128 Q185 124 190 128 Q195 124 200 128 Q205 124 210 128 Q215 124 220 128 Q225 124 230 128 Q235 124 240 128"
+              fill="none" stroke="rgba(255,220,80,0.5)" stroke-width="1.2"/>
+        <!-- Crown spires (tall ornate) -->
+        <path d="M142 128 L147 104 L154 120 L162 90  L169 112 L176 76  L183 106 L190 62  L197 106 L204 76  L211 112 L218 90  L226 120 L233 104 L238 128 Z"
+              fill="url(#goldShine)" stroke="rgba(255,220,60,0.5)" stroke-width="0.8"/>
+        <!-- Crown arch connecting top spires -->
+        <path d="M169 90 Q190 60 211 90" fill="rgba(212,175,55,0.35)" stroke="rgba(212,175,55,0.5)" stroke-width="1"/>
+        <!-- Crown top ornament (Kalasha) -->
+        <ellipse cx="190" cy="66" rx="12" ry="8"  fill="url(#goldShine)" stroke="rgba(255,220,80,0.7)" stroke-width="1"/>
+        <ellipse cx="190" cy="58" rx="8"  ry="5.5" fill="url(#goldShine)"/>
+        <circle  cx="190" cy="52" r="6"  fill="url(#goldShine)" stroke="rgba(255,220,80,0.8)" stroke-width="1"/>
+        <circle  cx="190" cy="46" r="3"  fill="rgba(255,80,0,0.9)"/>
+        <!-- Crown gems -->
+        <circle cx="190" cy="121" r="8"   fill="rgba(200,20,20,0.9)"  stroke="rgba(255,100,80,0.6)"  stroke-width="1.2" filter="url(#softBlur)"/>
+        <circle cx="190" cy="120" r="5"   fill="rgba(255,80,80,0.55)"/>
+        <circle cx="172" cy="123" r="5.5" fill="rgba(30,130,200,0.88)" stroke="rgba(100,180,255,0.5)" stroke-width="0.8"/>
+        <circle cx="208" cy="123" r="5.5" fill="rgba(30,160,80,0.88)"  stroke="rgba(80,220,120,0.5)"  stroke-width="0.8"/>
+        <circle cx="157" cy="126" r="4"   fill="rgba(212,175,55,0.92)" stroke="rgba(255,220,80,0.6)"  stroke-width="0.7"/>
+        <circle cx="223" cy="126" r="4"   fill="rgba(212,175,55,0.92)" stroke="rgba(255,220,80,0.6)"  stroke-width="0.7"/>
+
+        <!-- ═══ EARS ═══ -->
+        <!-- Left ear -->
+        <ellipse cx="134" cy="170" rx="16" ry="21" fill="rgba(130,72,22,0.95)"/>
+        <ellipse cx="134" cy="170" rx="10" ry="14" fill="rgba(100,50,12,0.7)"/>
+        <!-- Ear ornament (Kundala) left -->
+        <circle cx="134" cy="183" r="8" fill="none" stroke="url(#goldShine)" stroke-width="2.5"/>
+        <circle cx="134" cy="183" r="3.5" fill="rgba(220,50,50,0.85)"/>
+        <!-- Right ear -->
+        <ellipse cx="246" cy="170" rx="16" ry="21" fill="rgba(130,72,22,0.95)"/>
+        <ellipse cx="246" cy="170" rx="10" ry="14" fill="rgba(100,50,12,0.7)"/>
+        <!-- Ear ornament (Kundala) right -->
+        <circle cx="246" cy="183" r="8" fill="none" stroke="url(#goldShine)" stroke-width="2.5"/>
+        <circle cx="246" cy="183" r="3.5" fill="rgba(220,50,50,0.85)"/>
+
+        <!-- ═══ FOREHEAD ORNAMENT + TILAK ═══ -->
+        <!-- Maang tikka (forehead ornament) -->
+        <circle cx="190" cy="142" r="7" fill="url(#goldShine)" stroke="rgba(255,220,80,0.7)" stroke-width="1"/>
+        <circle cx="190" cy="142" r="4" fill="rgba(200,20,20,0.9)"/>
+        <!-- Urdhva Pundra — Vaishnava Tilak (two white verticals + red centre) -->
+        <rect x="184" y="149" width="5.5" height="16" rx="2.5" fill="rgba(255,255,255,0.90)"/>
+        <rect x="190.5" y="149" width="5.5" height="16" rx="2.5" fill="rgba(255,255,255,0.90)"/>
+        <rect x="186" y="151" width="8"   height="12" rx="2"   fill="rgba(255,60,0,0.75)"/>
+
+        <!-- ═══ EYES — Large, Fierce, Divine ═══ -->
+        <!-- Eye white base -->
+        <ellipse cx="168" cy="169" rx="17" ry="13" fill="rgba(255,248,220,0.96)"/>
+        <ellipse cx="212" cy="169" rx="17" ry="13" fill="rgba(255,248,220,0.96)"/>
+        <!-- Iris — golden yellow -->
+        <circle cx="168" cy="169" r="10" fill="url(#eyeYellow)"/>
+        <circle cx="212" cy="169" r="10" fill="url(#eyeYellow)"/>
+        <!-- Pupil — deep black -->
+        <circle cx="168" cy="169" r="6"  fill="rgba(10,2,0,0.97)"/>
+        <circle cx="212" cy="169" r="6"  fill="rgba(10,2,0,0.97)"/>
+        <!-- Eye glow ring -->
+        <circle cx="168" cy="169" r="10" fill="none" stroke="rgba(255,200,0,0.4)" stroke-width="1.2"/>
+        <circle cx="212" cy="169" r="10" fill="none" stroke="rgba(255,200,0,0.4)" stroke-width="1.2"/>
+        <!-- Highlight dots -->
+        <circle cx="170" cy="166" r="2.8" fill="white"/>
+        <circle cx="214" cy="166" r="2.8" fill="white"/>
+        <circle cx="167" cy="171" r="1.2" fill="rgba(255,255,200,0.7)"/>
+        <circle cx="211" cy="171" r="1.2" fill="rgba(255,255,200,0.7)"/>
+        <!-- Fierce brow lines (inward angular) -->
+        <path d="M150 159 Q168 152 186 158" fill="none" stroke="rgba(15,0,0,0.8)" stroke-width="3"   stroke-linecap="round"/>
+        <path d="M194 158 Q212 152 230 159" fill="none" stroke="rgba(15,0,0,0.8)" stroke-width="3"   stroke-linecap="round"/>
+        <!-- Inner brow shadow -->
+        <path d="M158 161 Q168 155 178 161" fill="none" stroke="rgba(15,0,0,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M202 161 Q212 155 222 161" fill="none" stroke="rgba(15,0,0,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Lower eyelid -->
+        <path d="M151 178 Q168 184 185 178" fill="none" stroke="rgba(100,55,5,0.35)" stroke-width="1"  stroke-linecap="round"/>
+        <path d="M195 178 Q212 184 229 178" fill="none" stroke="rgba(100,55,5,0.35)" stroke-width="1"  stroke-linecap="round"/>
+
+        <!-- ═══ NOSE / MUZZLE ═══ -->
+        <ellipse cx="190" cy="187" rx="16" ry="13" fill="rgba(105,58,12,0.92)"/>
+        <!-- Bridge of nose -->
+        <path d="M182 172 Q190 176 198 172" fill="none" stroke="rgba(80,40,5,0.4)" stroke-width="1.5"/>
+        <!-- Nostrils -->
+        <ellipse cx="183" cy="190" rx="5.5" ry="4.5" fill="rgba(40,15,0,0.75)"/>
+        <ellipse cx="197" cy="190" rx="5.5" ry="4.5" fill="rgba(40,15,0,0.75)"/>
+        <!-- Nose highlight -->
+        <ellipse cx="189" cy="182" rx="4" ry="3" fill="rgba(200,130,60,0.35)"/>
+
+        <!-- ═══ MOUTH — Open, dignified ═══ -->
+        <!-- Outer lips -->
+        <path d="M160 200 Q190 217 220 200 Q218 226 190 230 Q162 226 160 200 Z"
+              fill="rgba(70,8,8,0.93)" stroke="rgba(140,65,15,0.5)" stroke-width="0.8"/>
+        <!-- Upper lip -->
+        <path d="M162 200 Q190 210 218 200" fill="rgba(110,35,5,0.7)"/>
+        <!-- Teeth row (upper) -->
+        <rect x="172" y="200" width="8"  height="10" rx="2.5" fill="rgba(255,252,235,0.94)"/>
+        <rect x="181" y="200" width="8"  height="11" rx="2.5" fill="rgba(255,255,245,0.97)"/>
+        <rect x="190" y="200" width="8"  height="11" rx="2.5" fill="rgba(255,255,245,0.97)"/>
+        <rect x="199" y="200" width="8"  height="10" rx="2.5" fill="rgba(255,252,235,0.94)"/>
+        <!-- Fangs / Canines (prominent but dignified) -->
+        <path d="M160 200 L165 215 L170 200" fill="rgba(255,252,235,0.92)"/>
+        <path d="M210 200 L215 215 L220 200" fill="rgba(255,252,235,0.92)"/>
+        <!-- Tongue visible -->
+        <ellipse cx="190" cy="218" rx="10" ry="5.5" fill="rgba(170,20,20,0.75)"/>
+        <!-- Lower lip -->
+        <path d="M165 220 Q190 228 215 220" fill="rgba(110,35,5,0.5)" stroke="none"/>
+
+        <!-- ═══ CHEEK ACCENT MARKS (temple-art style) ═══ -->
+        <ellipse cx="145" cy="183" rx="10" ry="6" fill="rgba(255,120,0,0.15)" stroke="rgba(255,120,0,0.25)" stroke-width="0.8" transform="rotate(-12 145 183)"/>
+        <ellipse cx="235" cy="183" rx="10" ry="6" fill="rgba(255,120,0,0.15)" stroke="rgba(255,120,0,0.25)" stroke-width="0.8" transform="rotate(12  235 183)"/>
+
+        <!-- ═══ GODDESS LAKSHMI — Seated on Left Thigh ═══ -->
+        <g opacity="0.92">
+          <!-- Body / saree -->
+          <path d="M132 378 Q148 395 165 378 L162 408 Q148 414 134 408 Z"
+                fill="rgba(230,57,70,0.65)" stroke="rgba(212,175,55,0.55)" stroke-width="1"/>
+          <!-- Saree border -->
+          <path d="M133 379 Q148 395 164 379" fill="none" stroke="rgba(212,175,55,0.75)" stroke-width="1.5"/>
+          <!-- Torso -->
+          <ellipse cx="148" cy="375" rx="18" ry="20" fill="rgba(220,175,110,0.82)"/>
+          <!-- Blouse detail -->
+          <ellipse cx="148" cy="380" rx="14" ry="10" fill="rgba(255,80,100,0.5)" stroke="rgba(212,175,55,0.4)" stroke-width="0.7"/>
+          <!-- Head -->
+          <circle cx="148" cy="351" r="15" fill="rgba(225,185,120,0.92)"/>
+          <!-- Hair bun (jada) -->
+          <path d="M135 345 Q148 335 161 345" fill="rgba(25,10,0,0.88)"/>
+          <path d="M137 341 Q148 333 159 341" fill="rgba(25,10,0,0.75)"/>
+          <!-- Hair ornaments -->
+          <path d="M138 337 L141 326 L145 334 L148 321 L151 334 L155 326 L158 337"
+                fill="url(#goldShine)" stroke="rgba(255,220,80,0.5)" stroke-width="0.5"/>
+          <!-- Face - Lakshmi -->
+          <!-- Eyes (small, beautiful) -->
+          <ellipse cx="142" cy="350" rx="4.5" ry="3.5" fill="rgba(255,240,200,0.9)"/>
+          <ellipse cx="154" cy="350" rx="4.5" ry="3.5" fill="rgba(255,240,200,0.9)"/>
+          <circle  cx="142" cy="350" r="2.5"  fill="rgba(25,8,0,0.95)"/>
+          <circle  cx="154" cy="350" r="2.5"  fill="rgba(25,8,0,0.95)"/>
+          <circle  cx="143" cy="349" r="1"    fill="white"/>
+          <circle  cx="155" cy="349" r="1"    fill="white"/>
+          <!-- Nose -->
+          <ellipse cx="148" cy="355" rx="3" ry="2.5" fill="rgba(180,120,60,0.7)"/>
+          <!-- Lips (smile) -->
+          <path d="M143 360 Q148 364 153 360" fill="rgba(200,50,70,0.8)" stroke="none"/>
+          <!-- Bindi -->
+          <circle cx="148" cy="345" r="2.5" fill="rgba(200,10,10,0.92)"/>
+          <!-- Necklace -->
+          <path d="M138 362 Q148 368 158 362" fill="none" stroke="rgba(212,175,55,0.75)" stroke-width="1.5"/>
+          <circle cx="148" cy="367" r="2.5" fill="rgba(212,175,55,0.8)"/>
+          <!-- Arms (2 arms — holding lotus and gold coins) -->
+          <line x1="133" y1="368" x2="120" y2="380" stroke="rgba(220,175,110,0.9)" stroke-width="6" stroke-linecap="round"/>
+          <!-- Lotus in left hand -->
+          <circle cx="116" cy="383" r="9"  fill="rgba(240,98,146,0.75)" stroke="rgba(194,24,91,0.6)" stroke-width="0.8"/>
+          <ellipse cx="116" cy="378" rx="6" ry="9" fill="rgba(248,187,208,0.8)"/>
+          <circle  cx="116" cy="380" r="3.5" fill="rgba(255,215,80,0.85)"/>
+          <line x1="163" y1="368" x2="173" y2="380" stroke="rgba(220,175,110,0.9)" stroke-width="6" stroke-linecap="round"/>
+          <!-- Gold coins from right hand -->
+          <circle cx="175" cy="383" r="7"  fill="rgba(212,175,55,0.8)" stroke="rgba(255,220,80,0.6)" stroke-width="0.8"/>
+          <circle cx="176" cy="391" r="5"  fill="rgba(212,175,55,0.7)" stroke="rgba(255,220,80,0.5)" stroke-width="0.7"/>
+          <circle cx="174" cy="398" r="4"  fill="rgba(212,175,55,0.6)"/>
+        </g>
+
+        <!-- ═══ DIVINE GLOW PARTICLES ═══ -->
+        <circle cx="96"  cy="128" r="2.5" fill="rgba(255,140,0,0.75)"><animate attributeName="opacity" values="0;1;0" dur="2.1s" repeatCount="indefinite" begin="0s"/></circle>
+        <circle cx="284" cy="115" r="3"   fill="rgba(212,175,55,0.7)"><animate attributeName="opacity" values="0;1;0" dur="2.6s" repeatCount="indefinite" begin="0.45s"/></circle>
+        <circle cx="72"  cy="202" r="2"   fill="rgba(255,140,0,0.65)"><animate attributeName="opacity" values="0;1;0" dur="1.9s" repeatCount="indefinite" begin="0.9s"/></circle>
+        <circle cx="308" cy="210" r="2.5" fill="rgba(201,100,144,0.65)"><animate attributeName="opacity" values="0;1;0" dur="2.3s" repeatCount="indefinite" begin="0.2s"/></circle>
+        <circle cx="163" cy="48"  r="2.2" fill="rgba(212,175,55,0.85)"><animate attributeName="opacity" values="0;1;0" dur="1.6s" repeatCount="indefinite" begin="1.1s"/></circle>
+        <circle cx="217" cy="44"  r="2"   fill="rgba(255,140,0,0.75)"><animate attributeName="opacity" values="0;1;0" dur="2.0s" repeatCount="indefinite" begin="0.7s"/></circle>
+        <circle cx="312" cy="330" r="2"   fill="rgba(212,175,55,0.55)"><animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="1.5s"/></circle>
+        <circle cx="68"  cy="320" r="2"   fill="rgba(201,100,144,0.55)"><animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite" begin="0.6s"/></circle>
+        <circle cx="292" cy="380" r="1.8" fill="rgba(255,215,80,0.6)"><animate attributeName="opacity" values="0;1;0" dur="1.7s" repeatCount="indefinite" begin="1.3s"/></circle>
+        <circle cx="88"  cy="380" r="1.8" fill="rgba(240,98,146,0.6)"><animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite" begin="0.35s"/></circle>
+      </svg>
+    </div>
+    </div><!-- end display:none hidden SVG wrapper -->
+
+    <h1 class="hero-title-tel">కదిరి శ్రీ లక్ష్మీ నరసింహ స్వామి ఆలయం</h1>
+    <p class="hero-title-en">Kadiri Sri Lakshmi Narasimha Swamy Temple</p>
+    <p class="hero-tagline">The Sacred Abode of Lord Narasimha — Kadiri, Andhra Pradesh</p>
+    <div class="hero-btns">
+      <a href="#reach"   class="btn-gold">Plan Your Visit</a>
+      <a href="#timings" class="btn-outline">Temple Timings</a>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span></span></div>
+</section>
+
+<div class="ornament-border"></div>
+
+<!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+<section id="about" class="section-pad section-dark">
+  <div class="section-header fade-in">
+    <span class="om-deco">ॐ</span>
+    <h2>About the Temple</h2>
+    <span class="tel-title">ఆలయం గురించి</span>
+    <div class="divider"><span></span><span class="lotus">🪷</span><span></span></div>
+  </div>
+
+  <div class="diya-row">
+    <div class="diya"><div class="glow-ring"></div><div class="flame"></div><div class="diya-body"></div></div>
+    <div class="diya"><div class="glow-ring"></div><div class="flame"></div><div class="diya-body"></div></div>
+    <div class="diya"><div class="glow-ring"></div><div class="flame"></div><div class="diya-body"></div></div>
+  </div>
+
+  <div class="about-grid fade-in">
+    <div class="about-photo-stack">
+      <img class="about-main-photo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Padamara_gopuram_at_Kadiri_Temple.JPG/600px-Padamara_gopuram_at_Kadiri_Temple.JPG"
+        alt="Padamara Gopuram at Kadiri Temple"
+        onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Main_Gate_Tower_of_the_temple.JPG/500px-Main_Gate_Tower_of_the_temple.JPG'"/>
+      <img class="about-secondary-photo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Mandapam_at_Kadiri_Temple.JPG/300px-Mandapam_at_Kadiri_Temple.JPG"
+        alt="Mandapam at Kadiri Temple"
+        onerror="this.style.display='none'"/>
+    </div>
+
+    <div class="about-text">
+      <h3>🏛️ History &amp; Origin</h3>
+      <p>The Kadiri Lakshmi Narasimha Swamy Temple, also known as <em>Yogananda Lakshmi Narasimha Swamy Temple</em>, dates to the glorious <strong style="color:var(--gold)">Vijayanagara Empire</strong> era (14th–16th century CE). The East Raja Gopuram was built in 1545 by Achyutha Devaraya, who also endowed the temple with shrines for Lord Vinayaka, Lord Krishna, and a Raghavendra Vrundavana.</p>
+      <p>The presiding deity, <strong style="color:var(--gold)">Yogananda Lakshmi Narasimha Swamy</strong>, is enshrined in a rare and uniquely serene <em>seated yogic posture (Yoga Narasimha)</em> with Goddess Lakshmi on the divine lap — a form unique in South India. The idol is revered as <em>Swayambhu</em> — self-manifested, having emerged from the roots of the sacred Kadiri tree on the hillock.</p>
+      <h3>⛰️ Sacred Hillock — Kadiri Betta</h3>
+      <p>The temple crowns <strong style="color:var(--gold)">Kadiri Betta</strong>, a rocky hillock rising majestically above the plains of Anantapur district. Pilgrims ascend stone-paved steps flanked by ancient sculptures and dense greenery, culminating in the divine darshan of the Lord.</p>
+      <div class="highlight-box">
+        "ఉగ్రం వీరం మహావిష్ణుం జ్వలంతం సర్వతోముఖం — నృసింహం భీషణం భద్రం మృత్యుమృత్యుం నమామ్యహం"
+        <br/><small style="font-size:0.8rem;color:rgba(255,248,231,0.5);margin-top:6px;display:block;">Narasimha Kavacham — "I bow to Narasimha, fierce and brave, blazing in all directions, who is death to death itself."</small>
+      </div>
+      <div class="fact-cards">
+        <div class="fact-card"><div class="icon">🏯</div><h4>Architecture</h4><p>Dravidian style with majestic <strong>7-tier Gopuram</strong> built during Vijayanagara era</p></div>
+        <div class="fact-card"><div class="icon">🔱</div><h4>Deity Form</h4><p>Rare <strong>Yogananda Narasimha</strong> — seated yogic posture with Goddess Lakshmi</p></div>
+        <div class="fact-card"><div class="icon">🌺</div><h4>Swayambhu</h4><p>Self-manifested idol from roots of the sacred Kadiri tree on the hillock</p></div>
+        <div class="fact-card"><div class="icon">🗺️</div><h4>Nava Kshetra</h4><p>One of the <strong>9 sacred Narasimha Kshetras</strong> in Andhra Pradesh</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ornament-border"></div>
+
+<!-- ═══════════════════════════════════ TIMINGS ═══════════════════════════════════ -->
+<section id="timings" class="section-pad section-mid">
+  <div class="section-header fade-in">
+    <span class="om-deco">🕐</span>
+    <h2>Darshan &amp; Puja Timings</h2>
+    <span class="tel-title">దర్శన సమయాలు</span>
+    <div class="divider"><span></span><span class="lotus">🪷</span><span></span></div>
+  </div>
+  <div class="timings-container">
+    <div class="timings-grid fade-in">
+      <div class="timing-card">
+        <div class="timing-card-header"><span class="icon">🌅</span><h3>Morning Darshan — ఉదయం</h3></div>
+        <div class="timing-items">
+          <div class="timing-item"><span class="puja-name">Temple Opens</span><span class="puja-time">5:30 AM</span></div>
+          <div class="timing-item"><span class="puja-name">Suprabhatam Seva</span><span class="puja-time">6:00 AM</span></div>
+          <div class="timing-item"><span class="puja-name">Abhishekam</span><span class="puja-time">7:00 AM</span></div>
+          <div class="timing-item"><span class="puja-name">Sahasranama Archana</span><span class="puja-time">8:30 AM</span></div>
+          <div class="timing-item"><span class="puja-name">Nivedana / Neivedyam</span><span class="puja-time">10:30 AM</span></div>
+          <div class="timing-item"><span class="puja-name">Rajabhoga Harathi</span><span class="puja-time">12:00 PM</span></div>
+          <div class="timing-item"><span class="puja-name">Darshan Closes</span><span class="puja-time">1:00 PM</span></div>
+        </div>
+      </div>
+      <div class="timing-card">
+        <div class="timing-card-header"><span class="icon">🌇</span><h3>Evening Darshan — సాయంత్రం</h3></div>
+        <div class="timing-items">
+          <div class="timing-item"><span class="puja-name">Evening Opens</span><span class="puja-time">3:00 PM</span></div>
+          <div class="timing-item"><span class="puja-name">Saayam Kaala Puja</span><span class="puja-time">5:00 PM</span></div>
+          <div class="timing-item"><span class="puja-name">Dolotsavam</span><span class="puja-time">6:00 PM</span></div>
+          <div class="timing-item"><span class="puja-name">Kalyana Utsavam</span><span class="puja-time">6:30 PM</span></div>
+          <div class="timing-item"><span class="puja-name">Ekanta Seva Harathi</span><span class="puja-time">7:30 PM</span></div>
+          <div class="timing-item"><span class="puja-name">Pavalimpu Seva</span><span class="puja-time">8:00 PM</span></div>
+          <div class="timing-item"><span class="puja-name">Temple Closes</span><span class="puja-time">8:30 PM</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-header fade-in" style="margin-bottom:24px;"><h2 style="font-size:1.4rem;">Special Sevas</h2><span class="tel-title" style="font-size:0.95rem;">ప్రత్యేక సేవలు</span></div>
+    <div class="seva-cards fade-in">
+      <div class="seva-card"><div class="seva-icon">🌄</div><h4>Suprabhatam</h4><p>Divine wake-up prayer</p></div>
+      <div class="seva-card"><div class="seva-icon">🏺</div><h4>Abhishekam</h4><p>Sacred ritual bathing</p></div>
+      <div class="seva-card"><div class="seva-icon">📿</div><h4>Sahasranama</h4><p>1008 names recitation</p></div>
+      <div class="seva-card"><div class="seva-icon">💍</div><h4>Kalyana Utsavam</h4><p>Celestial wedding ceremony</p></div>
+      <div class="seva-card"><div class="seva-icon">🪔</div><h4>Ekanta Seva</h4><p>Final evening aarti</p></div>
+      <div class="seva-card"><div class="seva-icon">🌸</div><h4>Pushpa Seva</h4><p>Sacred flower offering</p></div>
+    </div>
+    <div class="center-btn fade-in"><a href="#seva" class="btn-gold">Book a Seva Online</a></div>
+  </div>
+</section>
+
+<div class="ornament-border"></div>
+
+<!-- ═══════════════════════════════════ FESTIVALS ═══════════════════════════════════ -->
+<section id="festivals" class="section-pad section-alt">
+  <div class="section-header fade-in">
+    <span class="om-deco">🎊</span>
+    <h2>Festivals &amp; Events</h2>
+    <span class="tel-title">పండుగలు మరియు ఉత్సవాలు</span>
+    <div class="divider"><span></span><span class="lotus">🪷</span><span></span></div>
+  </div>
+  <div class="festivals-grid">
+    <div class="festival-card fade-in"><div class="festival-card-top"></div><div class="festival-card-body"><div class="festival-icon">🏆</div><h3>Brahmotsavam</h3><span class="date">10-Day Grand Festival | Feb–Mar</span><p>The most celebrated annual festival drawing lakhs of pilgrims. The Lord is taken in grand procession on Garuda, Hamsa, Ashwam, and other divine vahanas. Cultural programmes, religious discourses, and annadanam are conducted throughout the 10 days.</p></div></div>
+    <div class="festival-card fade-in"><div class="festival-card-top"></div><div class="festival-card-body"><div class="festival-icon">🦁</div><h3>Narasimha Jayanti</h3><span class="date">Vaishakha Shukla Chaturdashi | May</span><p>The divine appearance day of Lord Narasimha. Special pujas, abhishekam, night-long bhajans, and a grand night procession mark this most auspicious occasion. Thousands observe fasting and special prayers.</p></div></div>
+    <div class="festival-card fade-in"><div class="festival-card-top"></div><div class="festival-card-body"><div class="festival-icon">🌿</div><h3>Vaikunta Ekadasi</h3><span class="date">Margashira Shukla Ekadasi | Dec–Jan</span><p>The Vaikunta Dwaram (Gate of Heaven) is opened at dawn. Devotees who pass through are believed to attain moksha. The night resounds with Divya Prabandham recitation and special golden alankaram.</p></div></div>
+    <div class="festival-card fade-in"><div class="festival-card-top"></div><div class="festival-card-body"><div class="festival-icon">🌙</div><h3>Karthika Masam</h3><span class="date">November</span><p>The entire sacred month is celebrated with daily deepotsavam — a sea of lamps illuminating Kadiri Betta. The sight of thousands of diyas glowing on the hilltop at dusk is a breathtaking spiritual experience.</p></div></div>
+    <div class="festival-card fade-in"><div class="festival-card-top"></div><div class="festival-card-body"><div class="festival-icon">🎪</div><h3>Rathotsavam</h3><span class="date">During Brahmotsavam</span><p>The grand chariot procession through the streets of Kadiri town. Thousands of devotees pull the colossal wooden chariot adorned with the Lord in magnificent jewellery and flower garlands.</p></div></div>
+    <div class="festival-card fade-in"><div class="festival-card-top"></div><div class="festival-card-body"><div class="festival-icon">🌸</div><h3>Teppotsavam</h3><span class="date">Float Festival | Post Brahmotsavam</span><p>The float festival where the deity is taken on a beautifully decorated float on the sacred temple tank, surrounded by thousands of lamps reflecting on the water in an enchanting spiritual spectacle.</p></div></div>
+  </div>
+</section>
+
+<div class="ornament-border"></div>
+
+<!-- ═══════════════════════════════════ GALLERY ═══════════════════════════════════ -->
+<section id="gallery" class="section-pad section-upper">
+  <div class="section-header fade-in">
+    <span class="om-deco">📸</span>
+    <h2>Temple Photo Gallery</h2>
+    <span class="tel-title">ఆలయ చిత్ర దర్శనం</span>
+    <div class="divider"><span></span><span class="lotus">🪷</span><span></span></div>
+  </div>
+
+  <!-- REAL PHOTOS GRID -->
+  <div class="gallery-grid fade-in">
+
+    <!-- Wide: main gopuram -->
+    <div class="gallery-item wide"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Main_Gate_Tower_of_the_temple.JPG/1200px-Main_Gate_Tower_of_the_temple.JPG','Main Gate Tower — The Grand Gopuram of Kadiri Temple')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Main_Gate_Tower_of_the_temple.JPG/800px-Main_Gate_Tower_of_the_temple.JPG"
+           alt="Main Gate Tower Gopuram Kadiri Temple" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Main Gate Gopuram</span>
+      </div>
+    </div>
+
+    <!-- North Gopuram -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kadiri_Temple_North_Gopuram.JPG/800px-Kadiri_Temple_North_Gopuram.JPG','North Gopuram — Kadiri Lakshmi Narasimha Swamy Temple')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kadiri_Temple_North_Gopuram.JPG/500px-Kadiri_Temple_North_Gopuram.JPG"
+           alt="North Gopuram Kadiri Temple" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>North Gopuram</span>
+      </div>
+    </div>
+
+    <!-- Padamara Gopuram -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Padamara_gopuram_at_Kadiri_Temple.JPG/800px-Padamara_gopuram_at_Kadiri_Temple.JPG','Padamara Gopuram — Kadiri Temple')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Padamara_gopuram_at_Kadiri_Temple.JPG/500px-Padamara_gopuram_at_Kadiri_Temple.JPG"
+           alt="Padamara Gopuram Kadiri Temple" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Padamara Gopuram</span>
+      </div>
+    </div>
+
+    <!-- Sanctum Sanctorum -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Main_Sanctum_Sanctorum_at_Kadiri.JPG/800px-Main_Sanctum_Sanctorum_at_Kadiri.JPG','Main Sanctum Sanctorum — The Holy Garbhagriha')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Main_Sanctum_Sanctorum_at_Kadiri.JPG/500px-Main_Sanctum_Sanctorum_at_Kadiri.JPG"
+           alt="Main Sanctum Sanctorum Kadiri Temple" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Main Sanctum Sanctorum</span>
+      </div>
+    </div>
+
+    <!-- Mandapam -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Mandapam_at_Kadiri_Temple.JPG/800px-Mandapam_at_Kadiri_Temple.JPG','Mandapam — The Sacred Pillared Hall')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Mandapam_at_Kadiri_Temple.JPG/500px-Mandapam_at_Kadiri_Temple.JPG"
+           alt="Mandapam Kadiri Temple" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Mandapam — Pillared Hall</span>
+      </div>
+    </div>
+
+    <!-- Kalyana Mantap -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Kalyana_Mantap.JPG/800px-Kalyana_Mantap.JPG','Kalyana Mantap — The Divine Wedding Hall')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Kalyana_Mantap.JPG/500px-Kalyana_Mantap.JPG"
+           alt="Kalyana Mantap Kadiri Temple" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Kalyana Mantap</span>
+      </div>
+    </div>
+
+    <!-- Temple Complex -->
+    <div class="gallery-item wide"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Temple_Complex_at_Kadiri_Temple.JPG/1200px-Temple_Complex_at_Kadiri_Temple.JPG','Temple Complex — Kadiri Lakshmi Narasimha Swamy Temple')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Temple_Complex_at_Kadiri_Temple.JPG/800px-Temple_Complex_at_Kadiri_Temple.JPG"
+           alt="Temple Complex Kadiri" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Temple Complex</span>
+      </div>
+    </div>
+
+    <!-- Temple Premises -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Temple_premises.JPG/800px-Temple_premises.JPG','Temple Premises — Kadiri')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Temple_premises.JPG/500px-Temple_premises.JPG"
+           alt="Temple Premises Kadiri" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Temple Premises</span>
+      </div>
+    </div>
+
+    <!-- Sub temple 1 -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Subtemple1_at_Kadiri_Temple_Complex.JPG/800px-Subtemple1_at_Kadiri_Temple_Complex.JPG','Sub-temple in the Kadiri Temple Complex')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Subtemple1_at_Kadiri_Temple_Complex.JPG/500px-Subtemple1_at_Kadiri_Temple_Complex.JPG"
+           alt="Sub temple Kadiri" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Sub-Temple Complex</span>
+      </div>
+    </div>
+
+    <!-- Kadiri 01 -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Kadiri_01.jpg/800px-Kadiri_01.jpg','Kadiri Temple — View 1')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Kadiri_01.jpg/500px-Kadiri_01.jpg"
+           alt="Kadiri Temple view 1" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Temple View</span>
+      </div>
+    </div>
+
+    <!-- Kadiri 02 -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kadiri_02.jpg/800px-Kadiri_02.jpg','Kadiri Temple — View 2')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kadiri_02.jpg/500px-Kadiri_02.jpg"
+           alt="Kadiri Temple view 2" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Temple View</span>
+      </div>
+    </div>
+
+    <!-- Stone inscription -->
+    <div class="gallery-item"
+         onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/A_stone_inscription_1_at_Kadiri_Temple.JPG/800px-A_stone_inscription_1_at_Kadiri_Temple.JPG','Ancient Stone Inscription — Kadiri Temple (Vijayanagara era)')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/A_stone_inscription_1_at_Kadiri_Temple.JPG/500px-A_stone_inscription_1_at_Kadiri_Temple.JPG"
+           alt="Stone inscription Kadiri Temple" loading="lazy"/>
+      <div class="gallery-overlay">
+        <span class="zoom">🔍</span>
+        <span>Vijayanagara Inscription</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Video Section -->
+  <div class="section-header fade-in" style="margin-top:50px;margin-bottom:24px;">
+    <h2 style="font-size:1.4rem;">Temple Tour &amp; Aarti</h2>
+  </div>
+  <div class="video-section fade-in">
+    <div class="video-placeholder">
+      <div class="video-bg-photo"></div>
+      <div class="play-btn" onclick="alert('Temple tour and live aarti videos will be embedded here. Visit our YouTube channel for live darshan broadcasts.')">▶</div>
+      <h3>Mangala Harathi — Live Aarti</h3>
+      <p>Subscribe to our YouTube channel for live darshan</p>
+      <a href="#" class="btn-outline" style="font-size:0.78rem;padding:7px 18px;">🎬 Visit YouTube Channel</a>
+    </div>
+  </div>
+
+  <!-- Live Darshan -->
+  <div class="section-header fade-in" style="margin-top:50px;margin-bottom:24px;">
+    <h2 style="font-size:1.4rem;">Live Darshan</h2>
+    <span class="tel-title" style="font-size:0.88rem;">నేరుగా దర్శనం</span>
+  </div>
+  <div class="live-darshan fade-in">
+    <div class="live-header">
+      <div class="live-dot"></div>
+      <span>🔴 Live Darshan — ప్రత్యక్ష దర్శనం</span>
+    </div>
+    <div class="live-content">
+      <div class="live-bg-photo"></div>
+      <div class="big-om">ॐ</div>
+      <h3>Live Darshan Stream</h3>
+      <p>Morning: 6:00 AM – 1:00 PM &nbsp;|&nbsp; Evening: 3:00 PM – 8:30 PM</p>
+      <a href="#" class="btn-gold">Watch Live Darshan</a>
+    </div>
+  </div>
+</section>
+
+<div class="ornament-border"></div>
+
+<!-- ═══════════════════════════════════ SEVA & DONATIONS ═══════════════════════════════════ -->
+<section id="seva" class="section-pad section-mid">
+  <div class="section-header fade-in">
+    <span class="om-deco">🙏</span>
+    <h2>Online Seva &amp; Donations</h2>
+    <span class="tel-title">సేవ మరియు విరాళాలు</span>
+    <div class="divider"><span></span><span class="lotus">🪷</span><span></span></div>
+  </div>
+  <div class="seva-donation-grid">
+    <div class="form-card fade-in">
+      <h3>🛕 Book a Seva</h3>
+      <form onsubmit="submitSeva(event)">
+        <div class="form-group"><label>Full Name / పూర్తి పేరు</label><input type="text" placeholder="Enter your full name" required/></div>
+        <div class="form-group"><label>Mobile Number / మొబైల్ నంబర్</label><input type="tel" placeholder="+91 XXXXX XXXXX" required/></div>
+        <div class="form-group"><label>Select Seva / సేవ ఎంచుకోండి</label>
+          <select required>
+            <option value="">-- Select Seva --</option>
+            <option>Suprabhatam Seva</option>
+            <option>Abhishekam</option>
+            <option>Sahasranama Archana</option>
+            <option>Kalyana Utsavam</option>
+            <option>Ekanta Seva</option>
+            <option>Pushpa Seva</option>
+            <option>Annadanam (Sponsorship)</option>
+            <option>Deepotsavam</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Preferred Date / తేదీ</label><input type="date" required/></div>
+        <div class="form-group"><label>Gothram (Optional)</label><input type="text" placeholder="Your gothram"/></div>
+        <div class="form-group"><label>Nakshatram (Optional)</label><input type="text" placeholder="Your birth star"/></div>
+        <button type="submit" class="btn-gold" style="width:100%;padding:13px;">Book Seva — సేవ బుక్ చేయండి</button>
+      </form>
+    </div>
+    <div class="fade-in">
+      <div class="form-card" style="margin-bottom:22px;">
+        <h3>💛 Make a Donation</h3>
+        <div class="donation-options">
+          <div class="donation-opt active" onclick="selectDonation(this)"><div class="d-icon">🍛</div><h4>Annadanam</h4><p>Free meals for pilgrims</p></div>
+          <div class="donation-opt" onclick="selectDonation(this)"><div class="d-icon">🏛️</div><h4>Temple Renovation</h4><p>Restore sacred structures</p></div>
+          <div class="donation-opt" onclick="selectDonation(this)"><div class="d-icon">🪔</div><h4>Lamp Offering</h4><p>Daily lamp service</p></div>
+          <div class="donation-opt" onclick="selectDonation(this)"><div class="d-icon">📚</div><h4>Vedic Education</h4><p>Support Veda pathashala</p></div>
+        </div>
+        <div class="form-group"><label>Donation Amount (₹)</label><input type="number" placeholder="Enter amount in INR" min="1"/></div>
+        <div class="form-group"><label>Donor Name</label><input type="text" placeholder="Your name for records"/></div>
+        <button class="btn-gold" style="width:100%;padding:13px;" onclick="alert('Secure payment gateway coming soon. Contact the temple trust for offline donations.')">Donate Now — ఇప్పుడే విరాళం</button>
+      </div>
+      <div class="trust-box">
+        <strong>Bank Details — Trust Account</strong><br/>
+        Kadiri Sri Lakshmi Narasimha Swamy Devasthanam Trust<br/>
+        Bank: State Bank of India, Kadiri Branch<br/>
+        IFSC: SBIN0XXXXX<br/>
+        <br/>
+        <em style="color:rgba(255,248,231,0.45);font-size:0.77rem;">All donations eligible for 80G tax exemption. Official receipt will be issued.</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ornament-border"></div>
+
+<!-- ═══════════════════════════════════ HOW TO REACH ═══════════════════════════════════ -->
+<section id="reach" class="section-pad section-alt">
+  <div class="section-header fade-in">
+    <span class="om-deco">🗺️</span>
+    <h2>How to Reach</h2>
+    <span class="tel-title">ఎలా చేరుకోవాలి</span>
+    <div class="divider"><span></span><span class="lotus">🪷</span><span></span></div>
+  </div>
+  <div class="reach-grid">
+    <div class="map-container fade-in">
+      <img class="map-real-photo"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Temple_Premises.JPG/600px-Temple_Premises.JPG"
+           alt="Temple Premises Kadiri" loading="lazy"
+           onerror="this.style.display='none'"/>
+      <div class="map-pin-overlay">
+        <div style="font-size:2.5rem;">📍</div>
+        <h4>Kadiri Sri Lakshmi Narasimha Swamy Temple</h4>
+        <p>Kadiri Town, Anantapur District<br/>Andhra Pradesh — 515 591</p>
+        <a href="https://maps.google.com/?q=Kadiri+Lakshmi+Narasimha+Swamy+Temple" target="_blank" rel="noopener noreferrer">📍 Open in Google Maps</a>
+      </div>
+    </div>
+    <div class="reach-info fade-in">
+      <div class="reach-card"><div class="r-icon">🚂</div><div><h4>By Train</h4><p>Nearest: <strong style="color:var(--gold)">Kadiri Railway Station (KHT)</strong> — 2 km. Well connected via Dharmavaram Junction to Bengaluru, Hyderabad &amp; Chennai.</p></div></div>
+      <div class="reach-card"><div class="r-icon">✈️</div><div><h4>By Air</h4><p>Nearest: <strong style="color:var(--gold)">Bengaluru International Airport (BLR)</strong> — approx. 180 km. Cabs and KSRTC buses available.</p></div></div>
+      <div class="reach-card"><div class="r-icon">🚌</div><div><h4>By Bus / Road</h4><p>APSRTC and private buses operate regular services to Kadiri.</p><div class="distance-tags"><span class="dtag">Bengaluru — 180 km</span><span class="dtag">Hyderabad — 250 km</span><span class="dtag">Chennai — 200 km</span><span class="dtag">Tirupati — 140 km</span><span class="dtag">Anantapur — 90 km</span></div></div></div>
+      <div class="reach-card"><div class="r-icon">🏠</div><div><h4>Accommodation</h4><p>Dharmashalas, choultries, and trust guest houses near the temple. Contact the Trust office for pilgrim accommodation bookings.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ornament-border"></div>
+
+<!-- ═══════════════════════════════════ CONTACT ═══════════════════════════════════ -->
+<section id="contact" class="section-pad section-dark">
+  <div class="section-header fade-in">
+    <span class="om-deco">📞</span>
+    <h2>Contact &amp; Trust Info</h2>
+    <span class="tel-title">సంప్రదింపు వివరాలు</span>
+    <div class="divider"><span></span><span class="lotus">🪷</span><span></span></div>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info-block fade-in">
+      <div class="contact-card"><div class="c-icon">🏛️</div><div><h4>Temple Trust</h4><p>Kadiri Sri Lakshmi Narasimha Swamy Devasthanam Trust<br/>Registered under AP Charitable &amp; Hindu Religious Institutions Act</p></div></div>
+      <div class="contact-card"><div class="c-icon">👤</div><div><h4>Executive Officer</h4><p>E.O. Office, Sri Lakshmi Narasimha Swamy Temple<br/>Kadiri, Anantapur District — 515 591<br/><a href="tel:+918558222222">📞 +91-85582-22222</a></p></div></div>
+      <div class="contact-card"><div class="c-icon">📧</div><div><h4>Email &amp; Online</h4><p><a href="mailto:info@kadiriswamidevasthanam.org">info@kadiriswamidevasthanam.org</a></p></div></div>
+      <div class="contact-card"><div class="c-icon">📱</div><div><h4>WhatsApp Helpline</h4><p>Seva bookings &amp; pilgrim enquiries<br/><a href="https://wa.me/918558222223">📲 +91-85582-22223</a> (WhatsApp only)</p></div></div>
+    </div>
+    <div class="form-card fade-in">
+      <h3>📝 Grievance / Enquiry Form</h3>
+      <form onsubmit="submitGrievance(event)">
+        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name" required/></div>
+        <div class="form-group"><label>Mobile / Email</label><input type="text" placeholder="+91 XXXXX XXXXX or email" required/></div>
+        <div class="form-group"><label>Type of Enquiry</label>
+          <select>
+            <option>Seva Booking</option>
+            <option>Donation Enquiry</option>
+            <option>Accommodation</option>
+            <option>Grievance / Complaint</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Describe your enquiry..." rows="4"></textarea></div>
+        <button type="submit" class="btn-gold" style="width:100%;padding:13px;">Submit — పంపించండి</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="ornament-border"></div>
+
+<!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="f-name-tel">కదిరి శ్రీ లక్ష్మీ నరసింహ స్వామి ఆలయం</span>
+      <span class="f-name-en">Kadiri Sri Lakshmi Narasimha Swamy Devasthanam</span>
+      <p>One of the most sacred Vaishnavite shrines in South India, this ancient temple on Kadiri Betta has been a beacon of devotion for millions of pilgrims since the Vijayanagara era. May Lord Narasimha shower His divine blessings upon all who seek His grace. 🙏</p>
+      <div class="social-links">
+        <a href="#" class="social-link" title="YouTube">▶</a>
+        <a href="#" class="social-link" title="Facebook">f</a>
+        <a href="#" class="social-link" title="WhatsApp">💬</a>
+        <a href="#" class="social-link" title="Instagram">📷</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About the Temple</a></li>
+      <li><a href="#timings">Darshan Timings</a></li>
+      <li><a href="#festivals">Festivals</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#seva">Online Seva</a></li>
+      <li><a href="#reach">How to Reach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Sevas</h4><ul>
+      <li><a href="#seva">Suprabhatam Seva</a></li>
+      <li><a href="#seva">Abhishekam</a></li>
+      <li><a href="#seva">Sahasranama Archana</a></li>
+      <li><a href="#seva">Kalyana Utsavam</a></li>
+      <li><a href="#seva">Annadanam</a></li>
+      <li><a href="#seva">Deepotsavam</a></li>
+      <li><a href="#seva">Temple Renovation</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Useful Info</h4><ul>
+      <li><a href="#timings">Puja Schedule</a></li>
+      <li><a href="#festivals">Brahmotsavam</a></li>
+      <li><a href="#gallery">Live Darshan</a></li>
+      <li><a href="#reach">Accommodation</a></li>
+      <li><a href="#contact">Grievance Cell</a></li>
+      <li><a href="#contact">Trust Details</a></li>
+      <li><a href="#seva">80G Donations</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Kadiri Sri Lakshmi Narasimha Swamy Devasthanam Trust. All rights reserved.</p>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span class="footer-deco">ॐ</span>
+      <span class="footer-deco">🪷</span>
+      <span class="footer-deco">🔱</span>
+    </div>
+    <p>Images © Wikimedia Commons contributors (CC BY-SA)</p>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════ JAVASCRIPT ═══════════════════════════════════ -->
+<script>
+  /* ─── Deity image multi-source fallback ─── */
+  const deityImgSources = [
+    'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Laxmi-Narasimha-Swamy.jpeg',
+    'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Sri-Lakshmi-Narasimha-Swamy.jpeg',
+    'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Lakshmi-Narasimha-Poster.jpeg',
+    'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Lakshmi-Narasimha.jpeg',
+    'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Lakshmi-Nrisimha.jpeg',
+    'https://wallpapercave.com/wp/wp5876196.jpg',
+    'https://wallpapercave.com/wp/wp5481588.jpg',
+    'https://wallpapercave.com/wp/wp5481648.jpg',
+    'https://wallpapercave.com/wp/wp5876329.jpg',
+    'https://wallpapercave.com/wp/wp5308233.jpg',
+  ];
+  let deityImgIdx = 0;
+  function tryNextDeityImg(el) {
+    deityImgIdx++;
+    if (deityImgIdx < deityImgSources.length) {
+      el.onerror = () => tryNextDeityImg(el);
+      el.src = deityImgSources[deityImgIdx];
+    } else {
+      /* All URLs exhausted — show elegant fallback */
+      const frame = el.closest('.deity-photo-frame');
+      if (frame) {
+        frame.innerHTML = `
+          <div style="aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;
+               justify-content:center;gap:16px;background:radial-gradient(circle at 50% 40%,
+               rgba(212,175,55,0.12),rgba(2,5,9,0.9));">
+            <div style="font-size:5rem;filter:drop-shadow(0 0 20px rgba(212,175,55,0.6))">🦁</div>
+            <p style="font-family:'Noto Serif Telugu',serif;color:var(--gold);font-size:1rem;
+               text-align:center;padding:0 16px;">శ్రీ లక్ష్మీ నరసింహ స్వామి</p>
+            <p style="font-size:0.75rem;color:var(--cream-faint);text-align:center;padding:0 16px;">
+              ॐ నమో నారాయణాయ</p>
+          </div>`;
+      }
+    }
+  }
+
+  /* Loader */
+  window.addEventListener('load', () => {
+    setTimeout(() => document.getElementById('loader').classList.add('hidden'), 2000);
+  });
+
+  /* Mobile menu */
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  document.addEventListener('click', (e) => {
+    const menu = document.getElementById('mobileMenu');
+    if (menu.classList.contains('open') && !menu.contains(e.target) && !e.target.classList.contains('hamburger')) {
+      menu.classList.remove('open');
+    }
+  });
+
+  /* Language toggle */
+  let telugu = false;
+  const enT = ['About','Timings','Festivals','Gallery','Seva','Visit','Contact'];
+  const teT = ['గురించి','సమయాలు','పండుగలు','గ్యాలరీ','సేవ','సందర్శన','సంప్రదింపు'];
+  function toggleLang() {
+    telugu = !telugu;
+    document.getElementById('langToggle').textContent = telugu ? 'English' : 'తెలుగు';
+    document.querySelectorAll('.nav-links a').forEach((a, i) => { if (i < 7) a.textContent = telugu ? teT[i] : enT[i]; });
+  }
+
+  /* Bell */
+  function ringBell() {
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      [880, 1100, 660].forEach((freq, i) => {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.connect(g); g.connect(ctx.destination);
+        o.type = 'sine';
+        o.frequency.value = freq;
+        g.gain.setValueAtTime(0, ctx.currentTime + i * 0.12);
+        g.gain.linearRampToValueAtTime(0.3, ctx.currentTime + i * 0.12 + 0.05);
+        g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.12 + 2);
+        o.start(ctx.currentTime + i * 0.12);
+        o.stop(ctx.currentTime + i * 0.12 + 2);
+      });
+    } catch(e) {}
+    const toast = document.getElementById('bellToast');
+    toast.style.display = 'block';
+    setTimeout(() => { toast.style.display = 'none'; }, 3200);
+  }
+
+  /* Lightbox */
+  function openLightbox(src, caption) {
+    document.getElementById('lightboxImg').src = src;
+    document.getElementById('lightboxImg').alt = caption;
+    document.getElementById('lightboxCaption').textContent = caption;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.getElementById('lightboxImg').src = '';
+    document.body.style.overflow = '';
+  }
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  /* Donation select */
+  function selectDonation(el) {
+    document.querySelectorAll('.donation-opt').forEach(d => d.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  /* Forms */
+  function submitSeva(e) {
+    e.preventDefault();
+    alert('🙏 Your seva has been booked! The temple trust will confirm via SMS within 24 hours.\nజయ శ్రీ లక్ష్మీ నరసింహ స్వామికి జయము!');
+    e.target.reset();
+  }
+  function submitGrievance(e) {
+    e.preventDefault();
+    alert('🙏 Your message has been submitted. The temple administration will respond within 3 working days.');
+    e.target.reset();
+  }
+
+  /* Scroll fade-in */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  /* Parallax hero */
+  const heroBg = document.getElementById('heroBg');
+  window.addEventListener('scroll', () => {
+    if (heroBg && window.scrollY < window.innerHeight) {
+      heroBg.style.transform = `translateY(${window.scrollY * 0.4}px) scale(1.05)`;
+    }
+  }, { passive: true });
+</script>
+</body>
+</html>
