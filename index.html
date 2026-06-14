@@ -250,7 +250,109 @@
               drop-shadow(0 0 60px rgba(255,140,0,0.2));
     }
 
-    /* ─── DEITY SVG ILLUSTRATION WRAPPER ─── */
+    /* ─── DEITY PHOTO FRAME ─── */
+    .deity-photo-wrap {
+      position: relative;
+      width: min(300px, 80vw);
+      margin: 0 auto 28px;
+    }
+    .deity-photo-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -14px;
+      border-radius: 16px;
+      background: conic-gradient(
+        rgba(212,175,55,0)    0deg,
+        rgba(212,175,55,0.9) 60deg,
+        rgba(255,220,80,1)  120deg,
+        rgba(212,175,55,0.9) 180deg,
+        rgba(255,140,0,0.5)  240deg,
+        rgba(212,175,55,0.9) 300deg,
+        rgba(212,175,55,0)  360deg
+      );
+      animation: rotateBorder 8s linear infinite;
+      z-index: 0;
+    }
+    @keyframes rotateBorder { to { transform: rotate(360deg); } }
+    .deity-photo-wrap::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 12px;
+      background: var(--bg-darkest);
+      z-index: 1;
+    }
+    .deity-photo-frame {
+      position: relative;
+      z-index: 2;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 3px solid rgba(212,175,55,0.6);
+      box-shadow:
+        0 0 0 1px rgba(212,175,55,0.3),
+        0 0 40px rgba(212,175,55,0.45),
+        0 0 80px rgba(255,140,0,0.2),
+        inset 0 0 30px rgba(212,175,55,0.1);
+      background: #1A0A00;
+    }
+    .deity-photo-frame img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .deity-halo {
+      position: absolute;
+      inset: -40px;
+      border-radius: 50%;
+      background: radial-gradient(circle,
+        rgba(212,175,55,0.25) 0%,
+        rgba(255,140,0,0.10) 40%,
+        transparent 70%);
+      animation: deityGlow 3s ease-in-out infinite;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .deity-corner {
+      position: absolute;
+      font-size: 1.4rem;
+      color: var(--gold);
+      opacity: 0.75;
+      z-index: 4;
+      text-shadow: 0 0 8px rgba(212,175,55,0.7);
+    }
+    .deity-corner.tl { top: -8px;  left:  -8px; }
+    .deity-corner.tr { top: -8px;  right: -8px; }
+    .deity-corner.bl { bottom: -8px; left:  -8px; }
+    .deity-corner.br { bottom: -8px; right: -8px; }
+    .deity-arch {
+      position: absolute;
+      top: -6px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .deity-arch span {
+      font-size: 1.1rem;
+      color: var(--gold);
+      text-shadow: 0 0 12px rgba(212,175,55,0.8);
+    }
+    .deity-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(2,5,9,0.88) 60%);
+      padding: 20px 10px 8px;
+      text-align: center;
+      font-family: 'Noto Serif Telugu', serif;
+      font-size: 0.8rem;
+      color: var(--gold-light);
+      z-index: 3;
+      letter-spacing: 0.04em;
+    }
+    /* ─── DEITY SVG ILLUSTRATION WRAPPER (fallback) ─── */
     .deity-svg-wrap {
       width: min(360px, 88vw);
       margin: 0 auto 22px;
@@ -796,8 +898,27 @@
   <div class="om-bg" aria-hidden="true">ॐ</div>
 
   <div class="hero-content">
-    <!-- Deity SVG Illustration — Yogananda Lakshmi Narasimha Swamy -->
-    <div class="deity-svg-wrap">
+    <!-- Real Devotional Poster — Yogananda Lakshmi Narasimha Swamy with Goddess Lakshmi & Devotees -->
+    <div class="deity-photo-wrap">
+      <div class="deity-halo"></div>
+      <div class="deity-photo-frame">
+        <img id="deityImg"
+          src="https://i.pinimg.com/originals/a5/98/db/a598db4145fa8c2af04457b0968ec67d.jpg"
+          alt="Yogananda Lakshmi Narasimha Swamy with Goddess Lakshmi and Devotees"
+          onerror="tryNextDeityImg(this)"/>
+        <div class="deity-caption">శ్రీ యోగానంద లక్ష్మీ నరసింహ స్వామి</div>
+      </div>
+      <span class="deity-corner tl">🪷</span>
+      <span class="deity-corner tr">🪷</span>
+      <span class="deity-corner bl">🪷</span>
+      <span class="deity-corner br">🪷</span>
+      <div class="deity-arch">
+        <span>✦</span><span style="font-size:1.5rem;font-family:'Noto Serif',serif;">ॐ</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- SVG Illustration fallback (hidden by default) -->
+    <div class="deity-svg-wrap" id="deitySvgFallback" style="display:none">
       <svg viewBox="0 0 500 620" xmlns="http://www.w3.org/2000/svg" aria-label="Yogananda Lakshmi Narasimha Swamy with Goddess Lakshmi">
         <defs>
           <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
@@ -2300,16 +2421,18 @@
 <script>
   /* ─── Deity image multi-source fallback ─── */
   const deityImgSources = [
+    /* Group poster with devotees, shesha hood, brahma/vishnu/shiva at top */
+    'https://i.pinimg.com/originals/a5/98/db/a598db4145fa8c2af04457b0968ec67d.jpg',
+    'https://i.pinimg.com/736x/a5/98/db/a598db4145fa8c2af04457b0968ec67d.jpg',
+    /* Single Narasimha+Lakshmi poster style fallbacks */
     'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Laxmi-Narasimha-Swamy.jpeg',
     'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Sri-Lakshmi-Narasimha-Swamy.jpeg',
     'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Lakshmi-Narasimha-Poster.jpeg',
     'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Lakshmi-Narasimha.jpeg',
-    'https://i0.wp.com/wordzz.com/wp-content/uploads/2023/09/Lakshmi-Nrisimha.jpeg',
     'https://wallpapercave.com/wp/wp5876196.jpg',
     'https://wallpapercave.com/wp/wp5481588.jpg',
     'https://wallpapercave.com/wp/wp5481648.jpg',
     'https://wallpapercave.com/wp/wp5876329.jpg',
-    'https://wallpapercave.com/wp/wp5308233.jpg',
   ];
   let deityImgIdx = 0;
   function tryNextDeityImg(el) {
@@ -2318,7 +2441,11 @@
       el.onerror = () => tryNextDeityImg(el);
       el.src = deityImgSources[deityImgIdx];
     } else {
-      /* All URLs exhausted — show elegant fallback */
+      /* All URLs exhausted — show SVG illustration fallback */
+      const wrap = el.closest('.deity-photo-wrap');
+      if (wrap) wrap.style.display = 'none';
+      const svgFallback = document.getElementById('deitySvgFallback');
+      if (svgFallback) svgFallback.style.display = '';
       const frame = el.closest('.deity-photo-frame');
       if (frame) {
         frame.innerHTML = `
