@@ -352,6 +352,48 @@
       z-index: 3;
       letter-spacing: 0.04em;
     }
+    /* ─── WATERMARK OVERLAY ─── */
+    .deity-watermark {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    /* Diagonal repeating watermark text */
+    .deity-watermark::before {
+      content: '© kadiri-temple.vercel.app  •  శ్రీ కదిరి నరసింహ స్వామి  •  © kadiri-temple.vercel.app  •  శ్రీ కదిరి నరసింహ స్వామి';
+      position: absolute;
+      top: 50%; left: -60%;
+      width: 220%;
+      text-align: center;
+      transform: translateY(-50%) rotate(-35deg);
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 600;
+      color: rgba(255, 220, 80, 0.22);
+      letter-spacing: 0.08em;
+      line-height: 2.8;
+      white-space: nowrap;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+      word-spacing: 8px;
+    }
+    /* Bottom-right corner badge */
+    .deity-watermark::after {
+      content: '© kadiri-temple.vercel.app';
+      position: absolute;
+      bottom: 42px; right: 8px;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.55rem;
+      font-weight: 700;
+      color: rgba(212, 175, 55, 0.7);
+      letter-spacing: 0.05em;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.9), 0 0 8px rgba(212,175,55,0.3);
+      background: rgba(2,5,9,0.5);
+      padding: 2px 5px;
+      border-radius: 3px;
+      border: 1px solid rgba(212,175,55,0.3);
+    }
     /* ─── DEITY SVG ILLUSTRATION WRAPPER (fallback) ─── */
     .deity-svg-wrap {
       width: min(360px, 88vw);
@@ -906,6 +948,7 @@
           src="https://i.pinimg.com/originals/a5/98/db/a598db4145fa8c2af04457b0968ec67d.jpg"
           alt="Yogananda Lakshmi Narasimha Swamy with Goddess Lakshmi and Devotees"
           onerror="tryNextDeityImg(this)"/>
+        <div class="deity-watermark"></div>
         <div class="deity-caption">శ్రీ యోగానంద లక్ష్మీ నరసింహ స్వామి</div>
       </div>
       <span class="deity-corner tl">🪷</span>
